@@ -1,0 +1,170 @@
+@import "colors";
+
+// Display headings
+$display-1: (
+  color: $heading-dark,
+  font-size: 5rem,
+  font-weight: 800 // Extra bold,
+);
+
+$display-2: map-merge(
+  $display-1,
+  (
+    font-size: 4.5rem,
+  )
+);
+$display-3: map-merge(
+  $display-1,
+  (
+    font-size: 4rem,
+  )
+);
+$display-4: map-merge(
+  $display-1,
+  (
+    font-size: 3.5rem,
+  )
+);
+$display-5: map-merge(
+  $display-1,
+  (
+    font-size: 3rem,
+  )
+);
+$display-6: map-merge(
+  $display-1,
+  (
+    font-size: 2.625rem,
+  )
+);
+
+// Headings
+$heading-h1: (
+  color: $heading-dark,
+  font-size: 2.5rem,
+  font-weight: 800,
+);
+
+$heading-h2: map-merge(
+  $heading-h1,
+  (
+    font-size: 2rem,
+  )
+);
+$heading-h3: map-merge(
+  $heading-h1,
+  (
+    font-size: 1.75rem,
+  )
+);
+$heading-h4: map-merge(
+  $heading-h1,
+  (
+    font-size: 1.5rem,
+  )
+);
+$heading-h5: map-merge(
+  $heading-h1,
+  (
+    font-size: 1.25rem,
+  )
+);
+$heading-h5: map-merge(
+  $heading-h1,
+  (
+    font-size: 1rem,
+  )
+);
+
+// Body text
+$lead-text-h: (
+  color: $heading-dark,
+  font-size: 1.5rem,
+  font-weight: 700 // Bold,
+);
+
+$lead-text: (
+  color: $body-text,
+  font-size: 1.5rem,
+  font-weight: 400 // Regular,
+);
+
+$xl-text-h: map-merge(
+  $lead-text-h,
+  (
+    font-size: 1.25rem,
+  )
+);
+
+$xl-text: map-merge(
+  $lead-text,
+  (
+    font-size: 1.25rem,
+  )
+);
+$l-text-h: map-merge(
+  $lead-text-h,
+  (
+    font-size: 1.125rem,
+  )
+);
+
+$l-text: map-merge(
+  $lead-text,
+  (
+    font-size: 1.125rem,
+  )
+);
+$m-text-h: map-merge(
+  $lead-text-h,
+  (
+    font-size: 1rem,
+  )
+);
+
+$m-text: map-merge(
+  $lead-text,
+  (
+    font-size: 1rem,
+  )
+);
+$s-text-h: map-merge(
+  $lead-text-h,
+  (
+    font-size: 0.875rem,
+  )
+);
+
+$s-text: map-merge(
+  $lead-text,
+  (
+    font-size: 0.875rem,
+  )
+);
+$xs-text-h: map-merge(
+  $lead-text-h,
+  (
+    font-size: 0.75rem,
+  )
+);
+
+$xs-text: map-merge(
+  $lead-text,
+  (
+    font-size: 0.75rem,
+  )
+);
+
+// Navigation text
+$navigation-text: (
+  color: $navigation,
+  font-size: 16px,
+  font-weight: 600 // Semi-bold,
+);
+
+$navigation-hover: map-merge(
+  $navigation-text,
+  (
+    color: $primary,
+  )
+);
