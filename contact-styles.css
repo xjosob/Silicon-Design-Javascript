@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+#contact-us {
+  background-color: #f3f6ff;
+}
+#contact-us .contact-us-container {
+  width: 100%;
+  max-width: 81rem;
+  margin: 0 auto;
+}
+#contact-us .breadcrumb {
+  display: flex;
+  align-items: center;
+  color: #6366f1;
+  font-size: 14px;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+#contact-us .breadcrumb .breadcrumb-link {
+  display: flex;
+  align-items: center;
+  color: #9397ad;
+  text-decoration: none;
+}
+#contact-us .breadcrumb .breadcrumb-link:hover {
+  color: #6366f1;
+}
+#contact-us .breadcrumb .material-icons-outlined {
+  margin-right: 0.25rem;
+}
+#contact-us .breadcrumb .breadcrumb-divider {
+  margin: 0 0.5rem;
+}/*# sourceMappingURL=contact-styles.css.map */
