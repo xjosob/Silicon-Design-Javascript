@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
 #contact-us {
   background-color: #f3f6ff;
+  height: 48.5625rem;
 }
 #contact-us .contact-us-container {
   width: 100%;
@@ -17,6 +18,7 @@
   width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
+  margin-top: 2.5rem;
 }
 #contact-us .breadcrumb .breadcrumb-link {
   display: flex;
@@ -32,4 +34,49 @@
 }
 #contact-us .breadcrumb .breadcrumb-divider {
   margin: 0 0.5rem;
+}
+#contact-us .contact-elements {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 4.5rem;
+}
+#contact-us .contact-elements .contact-info {
+  display: flex;
+  flex-direction: column;
+}
+#contact-us .contact-elements .contact-info .email-us {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-top: 4.5rem;
+}
+#contact-us .contact-elements .contact-info .email-us .email-us-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625rem;
+}
+#contact-us .contact-elements .contact-info .email-us .email-us-text .leave-message {
+  display: flex;
+  color: #6366f1;
+  align-items: center;
+  gap: 0.5rem;
+}
+#contact-us .contact-elements .contact-info .careers {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-top: 2.8125rem;
+}
+#contact-us .contact-elements .contact-info .careers .careers-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625rem;
+}
+#contact-us .contact-elements .contact-info .careers .careers-text .send-application {
+  display: flex;
+  color: #6366f1;
+  align-items: center;
+  gap: 0.5rem;
 }/*# sourceMappingURL=contact-styles.css.map */
