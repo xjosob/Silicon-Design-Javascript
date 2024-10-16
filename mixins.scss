@@ -1,0 +1,11 @@
+@mixin form-label {
+  @each $property, $value in $label-text {
+    #{$property}: $value;
+  }
+}
+
+@mixin form-input {
+  height: 2.5rem;
+  border: 1px solid $forms-border;
+  border-radius: 8px;
+}
