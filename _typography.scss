@@ -4,7 +4,7 @@
 $display-1: (
   color: $heading-dark,
   font-size: 5rem,
-  font-weight: 800 // Extra bold,
+  font-weight: 800 // Extra bold,,
 );
 
 $display-2: map-merge(
@@ -80,13 +80,13 @@ $heading-h5: map-merge(
 $lead-text-h: (
   color: $heading-dark,
   font-size: 1.5rem,
-  font-weight: 700 // Bold,
+  font-weight: 700 // Bold,,
 );
 
 $lead-text: (
   color: $body-text,
   font-size: 1.5rem,
-  font-weight: 400 // Regular,
+  font-weight: 400 // Regular,,
 );
 
 $xl-text-h: map-merge(
@@ -159,7 +159,7 @@ $xs-text: map-merge(
 $navigation-text: (
   color: $navigation,
   font-size: 16px,
-  font-weight: 600 // Semi-bold,
+  font-weight: 600 // Semi-bold,,
 );
 
 $navigation-hover: map-merge(
@@ -167,4 +167,11 @@ $navigation-hover: map-merge(
   (
     color: $primary,
   )
+);
+
+// Forms text
+$label-text: (
+  color: $heading-dark,
+  font-size: 16px,
+  font-weight: 600,
 );

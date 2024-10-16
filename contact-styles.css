@@ -37,14 +37,15 @@
 }
 #contact-us .contact-elements {
   display: flex;
-  justify-content: space-between;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-top: 4.5rem;
+  justify-content: space-between;
 }
 #contact-us .contact-elements .contact-info {
   display: flex;
   flex-direction: column;
+  width: 24.375rem;
 }
 #contact-us .contact-elements .contact-info .email-us {
   display: flex;
@@ -79,4 +80,46 @@
   color: #6366f1;
   align-items: center;
   gap: 0.5rem;
+}
+#contact-us .contact-elements .consultation {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+}
+#contact-us .contact-elements .consultation .consultation-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 4.375rem;
+  padding-right: 4.375rem;
+}
+#contact-us .contact-elements .consultation .consultation-wrapper h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 3.125rem;
+  padding-top: 4.5rem;
+  margin-bottom: 2.5rem;
+  color: #0b0f19;
+  font-size: 1.75rem;
+  font-weight: 800;
+  text-wrap: nowrap;
+}
+#contact-us .contact-elements .consultation .consultation-wrapper #full-name-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 8px;
+  gap: 0.25rem;
+}
+#contact-us .contact-elements .consultation .consultation-wrapper #full-name-form label {
+  color: #0b0f19;
+  font-size: 16px;
+  font-weight: 600;
+}
+#contact-us .contact-elements .consultation .consultation-wrapper #full-name-form input {
+  height: 2.5rem;
+  border: 1px solid #d4d7e5;
+  border-radius: 8px;
 }/*# sourceMappingURL=contact-styles.css.map */

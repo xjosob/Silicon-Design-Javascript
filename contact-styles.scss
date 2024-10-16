@@ -47,14 +47,15 @@
 
   .contact-elements {
     display: flex;
-    justify-content: space-between;
     padding-left: 1rem;
     padding-right: 1rem;
     margin-top: 4.5rem;
+    justify-content: space-between;
 
     .contact-info {
       display: flex;
       flex-direction: column;
+      width: 24.375rem;
 
       .email-us {
         display: flex;
@@ -92,6 +93,54 @@
             color: $primary;
             align-items: center;
             gap: 0.5rem;
+          }
+        }
+      }
+    }
+
+    .consultation {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      border-radius: 8px;
+
+      .consultation-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 4.375rem;
+        padding-right: 4.375rem;
+
+        h3 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-right: 3.125rem;
+          padding-top: 4.5rem;
+          margin-bottom: 2.5rem;
+          @each $property, $value in $heading-h3 {
+            #{$property}: $value;
+          }
+          text-wrap: nowrap;
+        }
+
+        #full-name-form {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          border-radius: 8px;
+          gap: 0.25rem;
+
+          label {
+            @each $property, $value in $label-text {
+              #{$property}: $value;
+            }
+          }
+
+          input {
+            height: 2.5rem;
+            border: 1px solid $forms-border;
+            border-radius: 8px;
           }
         }
       }
