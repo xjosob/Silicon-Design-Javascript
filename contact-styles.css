@@ -3,12 +3,25 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
 #contact-us {
   background-color: #f3f6ff;
-  height: 48.5625rem;
+  position: relative;
+  padding-bottom: 6.875rem;
+}
+#contact-us::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  background-color: white;
+  z-index: 1;
 }
 #contact-us .contact-us-container {
   width: 100%;
   max-width: 81rem;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 #contact-us .breadcrumb {
   display: flex;
@@ -19,6 +32,7 @@
   padding-left: 1rem;
   padding-right: 1rem;
   margin-top: 2.5rem;
+  padding-bottom: 2rem;
 }
 #contact-us .breadcrumb .breadcrumb-link {
   display: flex;
@@ -39,13 +53,54 @@
   display: flex;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-top: 4.5rem;
   justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+#contact-us .contact-elements a.leave-message,
+#contact-us .contact-elements a.send-application {
+  color: #6366f1;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  color: #6366f1;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+#contact-us .contact-elements a.leave-message:hover, #contact-us .contact-elements a.leave-message:focus,
+#contact-us .contact-elements a.send-application:hover,
+#contact-us .contact-elements a.send-application:focus {
+  color: #1215c3;
+}
+#contact-us .contact-elements a.leave-message:active,
+#contact-us .contact-elements a.send-application:active {
+  color: #9294f5;
+}
+#contact-us .contact-elements a.leave-message .material-icons,
+#contact-us .contact-elements a.send-application .material-icons {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+#contact-us .contact-elements a.leave-message:hover .material-icons, #contact-us .contact-elements a.leave-message:focus .material-icons,
+#contact-us .contact-elements a.send-application:hover .material-icons,
+#contact-us .contact-elements a.send-application:focus .material-icons {
+  transform: translateX(3px);
 }
 #contact-us .contact-elements .contact-info {
   display: flex;
   flex-direction: column;
   width: 24.375rem;
+  padding-bottom: 127px;
+}
+#contact-us .contact-elements .contact-info h1 {
+  color: #0b0f19;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+#contact-us .contact-elements .contact-info img {
+  width: 55px;
+  height: 55px;
 }
 #contact-us .contact-elements .contact-info .email-us {
   display: flex;
@@ -58,34 +113,45 @@
   flex-direction: column;
   gap: 1.5625rem;
 }
-#contact-us .contact-elements .contact-info .email-us .email-us-text .leave-message {
-  display: flex;
-  color: #6366f1;
-  align-items: center;
-  gap: 0.5rem;
+#contact-us .contact-elements .contact-info .email-us .email-us-text h4 {
+  color: #0b0f19;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+#contact-us .contact-elements .contact-info .email-us .email-us-text p {
+  color: #565973;
+  font-size: 1rem;
+  font-weight: 400;
 }
 #contact-us .contact-elements .contact-info .careers {
   display: flex;
   gap: 1.5rem;
   align-items: flex-start;
-  margin-top: 2.8125rem;
+  margin-top: 45px;
 }
 #contact-us .contact-elements .contact-info .careers .careers-text {
   display: flex;
   flex-direction: column;
   gap: 1.5625rem;
 }
-#contact-us .contact-elements .contact-info .careers .careers-text .send-application {
-  display: flex;
-  color: #6366f1;
-  align-items: center;
-  gap: 0.5rem;
+#contact-us .contact-elements .contact-info .careers .careers-text h4 {
+  color: #0b0f19;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+#contact-us .contact-elements .contact-info .careers .careers-text p {
+  color: #565973;
+  font-size: 1rem;
+  font-weight: 400;
 }
 #contact-us .contact-elements .consultation {
+  position: absolute;
+  bottom: -6.875rem;
+  right: 0;
   background-color: white;
-  display: flex;
-  justify-content: center;
+  z-index: 3;
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 #contact-us .contact-elements .consultation .consultation-wrapper {
   display: flex;
@@ -106,20 +172,57 @@
   font-weight: 800;
   text-wrap: nowrap;
 }
-#contact-us .contact-elements .consultation .consultation-wrapper #full-name-form {
+#contact-us .contact-elements .consultation .consultation-wrapper form {
   display: flex;
   flex-direction: column;
   width: 100%;
   border-radius: 8px;
-  gap: 0.25rem;
+  gap: 1.5rem;
 }
-#contact-us .contact-elements .consultation .consultation-wrapper #full-name-form label {
+#contact-us .contact-elements .consultation .consultation-wrapper form .form-group {
+  gap: 0.25rem;
+  display: flex;
+  flex-direction: column;
+}
+#contact-us .contact-elements .consultation .consultation-wrapper form .form-group label {
   color: #0b0f19;
   font-size: 16px;
   font-weight: 600;
 }
-#contact-us .contact-elements .consultation .consultation-wrapper #full-name-form input {
+#contact-us .contact-elements .consultation .consultation-wrapper form .form-group input {
   height: 2.5rem;
   border: 1px solid #d4d7e5;
   border-radius: 8px;
+  font-size: 1.2rem;
+}
+#contact-us .contact-elements .consultation .consultation-wrapper form .form-group select {
+  height: 2.5rem;
+  border: 1px solid #d4d7e5;
+  border-radius: 8px;
+}
+#contact-us .contact-elements .consultation .consultation-wrapper form input:focus,
+#contact-us .contact-elements .consultation .consultation-wrapper form select:focus {
+  outline: none;
+  border: 2px solid #6366f1;
+  box-shadow: 0 0 5px rgba(99, 102, 241, 0.5);
+}
+#contact-us .contact-elements .consultation .consultation-wrapper button[type=submit] {
+  background-color: #6366f1;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 0.8125rem;
+  border: none;
+  margin-bottom: 4.5rem;
+  margin-top: 7.625rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#contact-us .contact-elements .consultation .consultation-wrapper button[type=submit]:hover, #contact-us .contact-elements .consultation .consultation-wrapper button[type=submit]:focus {
+  background-color: #5558f0;
+  transform: translateY(-2px);
+}
+#contact-us .contact-elements .consultation .consultation-wrapper button[type=submit]:active {
+  background-color: #7a7df3;
 }/*# sourceMappingURL=contact-styles.css.map */

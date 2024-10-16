@@ -13,50 +13,86 @@
       <div class="contact-us-container">
         <div id="navbar"></div>
         <div class="breadcrumb">
-          <a href="index.html" class="breadcrumb-link">
+          <a
+            href="index.html"
+            class="breadcrumb-link"
+            aria-label="Go to Homepage"
+          >
             <span class="material-icons-outlined">home</span> Homepage
           </a>
-          <span class="breadcrumb-divider">&raquo;</span>
+          <span class="breadcrumb-divider" aria-hidden="true">&raquo;</span>
           <span class="breadcrumb-current">Contact</span>
         </div>
         <div class="contact-elements">
           <div class="contact-info">
             <h1>Contact Us</h1>
             <div class="email-us">
-              <img src="/icons/email-us.svg" class="email-us-image" />
+              <img
+                src="/icons/email-us.svg"
+                class="email-us-image"
+                alt="Email Us"
+              />
               <div class="email-us-text">
-                <h3>Email us</h3>
+                <h4>Email us</h4>
                 <p>
                   Please feel free to drop us a line. We will respond as soon as
                   possible.
                 </p>
-                <p class="leave-message">
+                <a href="#" class="leave-message">
                   Leave a message
-                  <span class="material-icons">arrow_forward</span>
-                </p>
+                  <span class="material-icons" aria-hidden="true"
+                    >arrow_forward</span
+                  >
+                </a>
               </div>
             </div>
             <div class="careers">
-              <img src="/icons/careers.svg" class="careers-image" />
+              <img
+                src="/icons/careers.svg"
+                class="careers-image"
+                alt="Careers"
+              />
               <div class="careers-text">
-                <h3>Careers</h3>
+                <h4>Careers</h4>
                 <p>
                   Sit ac ipsum leo lorem magna nunc mattis maecenas non
                   vestibulum.
                 </p>
-                <p class="send-application">
-                  Send a send-application
-                  <span class="material-icons">arrow_forward</span>
-                </p>
+                <a href="#" class="send-application">
+                  Send an application
+                  <span class="material-icons" aria-hidden="true"
+                    >arrow_forward</span
+                  >
+                </a>
               </div>
             </div>
           </div>
           <div class="consultation">
             <div class="consultation-wrapper">
               <h3>Get Online Consultation</h3>
-              <form id="full-name-form">
-                <label for="full-name">Full Name</label>
-                <input type="text" id="full-name" name="full-name" />
+              <form id="consultation-form" aria-labelledby="consultation-form">
+                <div class="form-group">
+                  <label for="full-name">Full Name</label>
+                  <input type="text" id="full-name" name="full-name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email/adress">Email Adress</label>
+                  <input
+                    type="text"
+                    id="email/adress"
+                    name="email-adress"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="specialist">Specialist</label>
+                  <select id="specialist" name="specialist" required>
+                    <option value="option-1"></option>
+                    <option value="option-2"></option>
+                  </select>
+                </div>
+
+                <button type="submit">Make an appointment</button>
               </form>
             </div>
           </div>
