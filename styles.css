@@ -39,6 +39,7 @@ body.dark-theme {
   list-style: none;
   display: flex;
   align-items: center;
+  gap: 1.5rem;
 }
 .content-wrapper-nav .theme-text {
   color: #565973;
@@ -60,6 +61,32 @@ body.dark-theme {
   margin-left: 3rem;
   line-height: 160%;
 }
+.content-wrapper-nav .features a {
+  color: inherit;
+  text-decoration: none;
+}
+.content-wrapper-nav .features a:hover {
+  color: #6366f1;
+}
+.content-wrapper-nav .contact {
+  color: #33354d;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 160%;
+}
+.content-wrapper-nav .contact a {
+  color: inherit;
+  text-decoration: none;
+}
+.content-wrapper-nav .contact a:hover {
+  color: #6366f1;
+}
+.content-wrapper-nav .sign-in-button {
+  gap: 0;
+}
+.content-wrapper-nav .sign-in-button a {
+  text-decoration: none;
+}
 .content-wrapper-nav .sign-in-button .sign-in {
   background-color: #6366f1;
   color: white;
@@ -74,7 +101,175 @@ body.dark-theme {
   width: auto;
   height: auto;
   gap: 0.5rem;
-  gap: 0;
+}
+.content-wrapper-nav .sign-in-button .sign-in:hover, .content-wrapper-nav .sign-in-button .sign-in:focus {
+  background-color: #5558f0;
+  transform: translateY(-2px);
+}
+.content-wrapper-nav .sign-in-button .sign-in:active {
+  background-color: #7a7df3;
+}
+.content-wrapper-nav .sign-in-button .sign-in .sign-in-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+.content-wrapper-nav .sign-in-button .sign-in:hover, .content-wrapper-nav .sign-in-button .sign-in:focus {
+  background-color: #5558f0;
+  transform: translateY(-2px);
+}
+.content-wrapper-nav .sign-in-button .sign-in:active {
+  background-color: #7a7df3;
+}
+.content-wrapper-nav .sign-in-button .sign-in .sign-in-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+.content-wrapper-nav .sign-in-button .sign-in:hover, .content-wrapper-nav .sign-in-button .sign-in:focus {
+  background-color: #5558f0;
+  transform: translateY(-2px);
+}
+.content-wrapper-nav .sign-in-button .sign-in:active {
+  background-color: #7a7df3;
+}
+.content-wrapper-nav .sign-in-button .sign-in .sign-in-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+.content-wrapper-nav .sign-in-button .sign-in:hover, .content-wrapper-nav .sign-in-button .sign-in:focus {
+  background-color: #5558f0;
+  transform: translateY(-2px);
+}
+.content-wrapper-nav .sign-in-button .sign-in:active {
+  background-color: #7a7df3;
+}
+.content-wrapper-nav .sign-in-button .sign-in .sign-in-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+.content-wrapper-nav .sign-in-button .sign-in:hover, .content-wrapper-nav .sign-in-button .sign-in:focus {
+  background-color: #5558f0;
+  transform: translateY(-2px);
+}
+.content-wrapper-nav .sign-in-button .sign-in:active {
+  background-color: #7a7df3;
+}
+.content-wrapper-nav .sign-in-button .sign-in .sign-in-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+.content-wrapper-nav .sign-in-button .sign-in:hover, .content-wrapper-nav .sign-in-button .sign-in:focus {
+  background-color: #5558f0;
+  transform: translateY(-2px);
+}
+.content-wrapper-nav .sign-in-button .sign-in:active {
+  background-color: #7a7df3;
+}
+.content-wrapper-nav .sign-in-button .sign-in .sign-in-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+.content-wrapper-nav .sign-in-button .sign-in:hover, .content-wrapper-nav .sign-in-button .sign-in:focus {
+  background-color: #5558f0;
+  transform: translateY(-2px);
+}
+.content-wrapper-nav .sign-in-button .sign-in:active {
+  background-color: #7a7df3;
+}
+.content-wrapper-nav .sign-in-button .sign-in .sign-in-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+.content-wrapper-nav .sign-in-button .sign-in:hover, .content-wrapper-nav .sign-in-button .sign-in:focus {
+  background-color: #5558f0;
+  transform: translateY(-2px);
+}
+.content-wrapper-nav .sign-in-button .sign-in:active {
+  background-color: #7a7df3;
+}
+.content-wrapper-nav .sign-in-button .sign-in .sign-in-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+.content-wrapper-nav .sign-in-button .sign-in:hover, .content-wrapper-nav .sign-in-button .sign-in:focus {
+  background-color: #5558f0;
+  transform: translateY(-2px);
+}
+.content-wrapper-nav .sign-in-button .sign-in:active {
+  background-color: #7a7df3;
+}
+.content-wrapper-nav .sign-in-button .sign-in .sign-in-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+.content-wrapper-nav .sign-in-button .sign-in:hover, .content-wrapper-nav .sign-in-button .sign-in:focus {
+  background-color: #5558f0;
+  transform: translateY(-2px);
+}
+.content-wrapper-nav .sign-in-button .sign-in:active {
+  background-color: #7a7df3;
+}
+.content-wrapper-nav .sign-in-button .sign-in .sign-in-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+.content-wrapper-nav .sign-in-button .sign-in:hover, .content-wrapper-nav .sign-in-button .sign-in:focus {
+  background-color: #5558f0;
+  transform: translateY(-2px);
+}
+.content-wrapper-nav .sign-in-button .sign-in:active {
+  background-color: #7a7df3;
+}
+.content-wrapper-nav .sign-in-button .sign-in .sign-in-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+.content-wrapper-nav .sign-in-button .sign-in:hover, .content-wrapper-nav .sign-in-button .sign-in:focus {
+  background-color: #5558f0;
+  transform: translateY(-2px);
+}
+.content-wrapper-nav .sign-in-button .sign-in:active {
+  background-color: #7a7df3;
+}
+.content-wrapper-nav .sign-in-button .sign-in .sign-in-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+.content-wrapper-nav .sign-in-button .sign-in:hover, .content-wrapper-nav .sign-in-button .sign-in:focus {
+  background-color: #5558f0;
+  transform: translateY(-2px);
+}
+.content-wrapper-nav .sign-in-button .sign-in:active {
+  background-color: #7a7df3;
+}
+.content-wrapper-nav .sign-in-button .sign-in .sign-in-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
 }
 .content-wrapper-nav .sign-in-button .sign-in .icon {
   font-size: 1.4375rem;
@@ -143,6 +338,9 @@ body.dark-theme nav .logo {
   content: url("logos/navbar-logo-dark.svg");
 }
 body.dark-theme nav .features {
+  color: white;
+}
+body.dark-theme nav .contact {
   color: white;
 }
 body.dark-theme nav .theme-text {

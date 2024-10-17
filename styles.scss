@@ -44,6 +44,7 @@ body.dark-theme {
     list-style: none;
     display: flex;
     align-items: center;
+    gap: 1.5rem;
   }
 
   .theme-text {
@@ -67,14 +68,58 @@ body.dark-theme {
     font-weight: map-get($navigation-text, font-weight);
     margin-left: 3rem;
     line-height: 160%;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  .contact {
+    color: map-get($navigation-text, color);
+    font-size: map-get($navigation-text, font-size);
+    font-weight: map-get($navigation-text, font-weight);
+    line-height: 160%;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        color: $primary;
+      }
+    }
   }
 
   .sign-in-button {
+    a {
+      text-decoration: none;
+    }
+    gap: 0;
     .sign-in {
       @each $property, $value in $button-with-icon {
         #{$property}: $value;
+        &:hover,
+        &:focus {
+          background-color: darken($primary, 3%);
+          transform: translateY(-2px);
+        }
+
+        &:active {
+          background-color: lighten($primary, 5%);
+        }
+
+        .sign-in-link {
+          text-decoration: none;
+          color: inherit;
+          display: flex;
+          align-items: center;
+        }
       }
-      gap: 0;
 
       .icon {
         font-size: 1.4375rem;
@@ -163,6 +208,10 @@ body.dark-theme nav {
     content: url("logos/navbar-logo-dark.svg");
   }
   .features {
+    color: white;
+  }
+
+  .contact {
     color: white;
   }
 
