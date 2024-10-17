@@ -262,12 +262,18 @@
     margin-top: 6rem;
     margin-bottom: 33.875rem;
 
+    img {
+      height: 482px;
+      width: auto;
+    }
+
     .adresses {
       display: flex;
       flex-direction: column;
       width: 31.25rem;
       align-items: center;
       gap: 3.125rem;
+      height: 100%;
 
       .medical-center-1,
       .medical-center-2 {
@@ -290,14 +296,86 @@
         }
 
         p {
+          display: flex;
+          align-items: center;
           @each $property, $value in $m-text {
             #{$property}: $value;
           }
         }
 
         .times-wrapper {
-          text-align: right;
+          display: flex;
+          flex-direction: column;
+          gap: 0.25rem;
+          @each $property, $value in $m-text {
+            #{$property}: $value;
+          }
+
+          b {
+            @each $property, $value in $m-text-h {
+              #{$property}: $value;
+            }
+          }
+          .time-entry {
+            display: flex;
+            align-items: center;
+            gap: 0.4375rem;
+
+            .material-icons-outlined {
+              color: $primary;
+            }
+          }
+
+          .time-entry.no-icon {
+            padding-left: 1.9375rem;
+          }
         }
+      }
+      .socials-icons {
+        display: flex;
+        justify-content: flex-start;
+        gap: 1.5rem;
+        width: 100%;
+        max-width: 28rem;
+      }
+    }
+
+    button {
+      transition: none;
+      box-shadow: none;
+      transform: none;
+      transition: none;
+      &:hover {
+        background-color: lighten($secondary, 1.2%);
+        transform: scale(1.1);
+      }
+
+      &:focus,
+      &:active {
+        box-shadow: none;
+        outline: none;
+        transform: scale(1);
+      }
+    }
+
+    .facebook {
+      @each $property, $value in $facebook-button {
+        #{$property}: $value;
+      }
+    }
+    .twitter {
+      @each $property, $value in $twitter-button {
+        #{$property}: $value;
+      }
+    }
+    .instagram {
+      @each $property, $value in $instagram-button {
+        #{$property}: $value;
+      }
+    }
+    .youtube {
+      @each $property, $value in $youtube-button {
+        #{$property}: $value;
       }
     }
   }

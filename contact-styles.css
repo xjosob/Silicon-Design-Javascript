@@ -236,12 +236,17 @@
   margin-top: 6rem;
   margin-bottom: 33.875rem;
 }
+#map-section .map-container img {
+  height: 482px;
+  width: auto;
+}
 #map-section .map-container .adresses {
   display: flex;
   flex-direction: column;
   width: 31.25rem;
   align-items: center;
   gap: 3.125rem;
+  height: 100%;
 }
 #map-section .map-container .adresses .medical-center-1,
 #map-section .map-container .adresses .medical-center-2 {
@@ -265,11 +270,108 @@
 }
 #map-section .map-container .adresses .medical-center-1 p,
 #map-section .map-container .adresses .medical-center-2 p {
+  display: flex;
+  align-items: center;
   color: #565973;
   font-size: 1rem;
   font-weight: 400;
 }
 #map-section .map-container .adresses .medical-center-1 .times-wrapper,
 #map-section .map-container .adresses .medical-center-2 .times-wrapper {
-  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  color: #565973;
+  font-size: 1rem;
+  font-weight: 400;
+}
+#map-section .map-container .adresses .medical-center-1 .times-wrapper b,
+#map-section .map-container .adresses .medical-center-2 .times-wrapper b {
+  color: #0b0f19;
+  font-size: 1rem;
+  font-weight: 700;
+}
+#map-section .map-container .adresses .medical-center-1 .times-wrapper .time-entry,
+#map-section .map-container .adresses .medical-center-2 .times-wrapper .time-entry {
+  display: flex;
+  align-items: center;
+  gap: 0.4375rem;
+}
+#map-section .map-container .adresses .medical-center-1 .times-wrapper .time-entry .material-icons-outlined,
+#map-section .map-container .adresses .medical-center-2 .times-wrapper .time-entry .material-icons-outlined {
+  color: #6366f1;
+}
+#map-section .map-container .adresses .medical-center-1 .times-wrapper .time-entry.no-icon,
+#map-section .map-container .adresses .medical-center-2 .times-wrapper .time-entry.no-icon {
+  padding-left: 1.9375rem;
+}
+#map-section .map-container .adresses .socials-icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 28rem;
+}
+#map-section .map-container button {
+  transition: none;
+  box-shadow: none;
+  transform: none;
+  transition: none;
+}
+#map-section .map-container button:hover {
+  background-color: #f4f6fd;
+  transform: scale(1.1);
+}
+#map-section .map-container button:focus, #map-section .map-container button:active {
+  box-shadow: none;
+  outline: none;
+  transform: scale(1);
+}
+#map-section .map-container .facebook {
+  background-image: url("/icons/bxl-facebook-square.svg");
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  border: none;
+  background-color: #eff2fc;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+#map-section .map-container .twitter {
+  background-image: url("/icons/bxl-twitter.svg");
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  border: none;
+  background-color: #eff2fc;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+#map-section .map-container .instagram {
+  background-image: url("/icons/bxl-instagram-alt.svg");
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  border: none;
+  background-color: #eff2fc;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+#map-section .map-container .youtube {
+  background-image: url("/icons/bxl-youtube.svg");
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  border: none;
+  background-color: #eff2fc;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }/*# sourceMappingURL=contact-styles.css.map */

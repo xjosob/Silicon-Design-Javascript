@@ -90,3 +90,52 @@ $carousel-button: (
   font-size: 2em,
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2),
 );
+
+$facebook-button: (
+  background-image: url("/icons/bxl-facebook-square.svg"),
+  width: 44px,
+  height: 44px,
+  border-radius: 6px,
+  border: none,
+  background-color: $secondary,
+  background-size: 50%,
+  background-position: center,
+  background-repeat: no-repeat,
+  cursor: pointer,
+);
+$twitter-button: (
+  background-image: url("/icons/bxl-twitter.svg"),
+  width: 44px,
+  height: 44px,
+  border-radius: 6px,
+  border: none,
+  background-color: $secondary,
+  background-size: 50%,
+  background-position: center,
+  background-repeat: no-repeat,
+  cursor: pointer,
+);
+$instagram-button: (
+  background-image: url("/icons/bxl-instagram-alt.svg"),
+  width: 44px,
+  height: 44px,
+  border-radius: 6px,
+  border: none,
+  background-color: $secondary,
+  background-size: 50%,
+  background-position: center,
+  background-repeat: no-repeat,
+  cursor: pointer,
+);
+$youtube-button: (
+  background-image: url("/icons/bxl-youtube.svg"),
+  width: 44px,
+  height: 44px,
+  border-radius: 6px,
+  border: none,
+  background-color: $secondary,
+  background-size: 50%,
+  background-position: center,
+  background-repeat: no-repeat,
+  cursor: pointer,
+);
