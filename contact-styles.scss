@@ -350,6 +350,8 @@
         transform: scale(1.1);
       }
 
+      transition: background-color 0.2s ease, transform 0.1s ease;
+
       &:focus,
       &:active {
         box-shadow: none;

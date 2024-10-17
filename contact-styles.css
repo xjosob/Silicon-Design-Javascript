@@ -317,6 +317,7 @@
   box-shadow: none;
   transform: none;
   transition: none;
+  transition: background-color 0.2s ease, transform 0.1s ease;
 }
 #map-section .map-container button:hover {
   background-color: #f4f6fd;

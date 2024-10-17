@@ -109,6 +109,7 @@ body.dark-theme {
           transform: translateY(-2px);
         }
 
+        transition: background-color 0.3s ease, transform 0.2s ease;
         &:active {
           background-color: lighten($primary, 5%);
         }
