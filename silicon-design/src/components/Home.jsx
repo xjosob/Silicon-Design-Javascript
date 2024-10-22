@@ -9,7 +9,7 @@ import Subscribe from "./Subscribe";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Hero />
       <Brands />
       <AppFeatures />
@@ -17,7 +17,7 @@ const Home = () => {
       <Testimonials />
       <FAQ />
       <Subscribe />
-    </div>
+    </>
   );
 };
 export default Home;
