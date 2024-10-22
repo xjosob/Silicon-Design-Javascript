@@ -240,7 +240,7 @@
   height: 482px;
   width: auto;
 }
-#map-section .map-container .adresses {
+#map-section .map-container .addresses {
   display: flex;
   flex-direction: column;
   width: 31.25rem;
@@ -248,8 +248,7 @@
   gap: 3.125rem;
   height: 100%;
 }
-#map-section .map-container .adresses .medical-center-1,
-#map-section .map-container .adresses .medical-center-2 {
+#map-section .map-container .addresses .medical-center {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -258,26 +257,22 @@
   text-align: left;
   max-width: 28rem;
 }
-#map-section .map-container .adresses .medical-center-1 span,
-#map-section .map-container .adresses .medical-center-2 span {
+#map-section .map-container .addresses .medical-center span {
   color: #6366f1;
 }
-#map-section .map-container .adresses .medical-center-1 h4,
-#map-section .map-container .adresses .medical-center-2 h4 {
+#map-section .map-container .addresses .medical-center h4 {
   color: #0b0f19;
   font-size: 1.5rem;
   font-weight: 800;
 }
-#map-section .map-container .adresses .medical-center-1 p,
-#map-section .map-container .adresses .medical-center-2 p {
+#map-section .map-container .addresses .medical-center p {
   display: flex;
   align-items: center;
   color: #565973;
   font-size: 1rem;
   font-weight: 400;
 }
-#map-section .map-container .adresses .medical-center-1 .times-wrapper,
-#map-section .map-container .adresses .medical-center-2 .times-wrapper {
+#map-section .map-container .addresses .medical-center .times-wrapper {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
@@ -285,27 +280,23 @@
   font-size: 1rem;
   font-weight: 400;
 }
-#map-section .map-container .adresses .medical-center-1 .times-wrapper b,
-#map-section .map-container .adresses .medical-center-2 .times-wrapper b {
+#map-section .map-container .addresses .medical-center .times-wrapper b {
   color: #0b0f19;
   font-size: 1rem;
   font-weight: 700;
 }
-#map-section .map-container .adresses .medical-center-1 .times-wrapper .time-entry,
-#map-section .map-container .adresses .medical-center-2 .times-wrapper .time-entry {
+#map-section .map-container .addresses .medical-center .times-wrapper .time-entry {
   display: flex;
   align-items: center;
   gap: 0.4375rem;
 }
-#map-section .map-container .adresses .medical-center-1 .times-wrapper .time-entry .material-icons-outlined,
-#map-section .map-container .adresses .medical-center-2 .times-wrapper .time-entry .material-icons-outlined {
+#map-section .map-container .addresses .medical-center .times-wrapper .time-entry .material-icons-outlined {
   color: #6366f1;
 }
-#map-section .map-container .adresses .medical-center-1 .times-wrapper .time-entry.no-icon,
-#map-section .map-container .adresses .medical-center-2 .times-wrapper .time-entry.no-icon {
+#map-section .map-container .addresses .medical-center .times-wrapper .time-entry.no-icon {
   padding-left: 1.9375rem;
 }
-#map-section .map-container .adresses .socials-icons {
+#map-section .map-container .addresses .socials-icons {
   display: flex;
   justify-content: flex-start;
   gap: 1.5rem;

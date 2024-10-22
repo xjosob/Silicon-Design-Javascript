@@ -267,7 +267,7 @@
       width: auto;
     }
 
-    .adresses {
+    .addresses {
       display: flex;
       flex-direction: column;
       width: 31.25rem;
@@ -275,8 +275,7 @@
       gap: 3.125rem;
       height: 100%;
 
-      .medical-center-1,
-      .medical-center-2 {
+      .medical-center {
         display: flex;
         flex-direction: column;
         gap: 0.75rem;

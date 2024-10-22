@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   useEffect(() => {
@@ -35,16 +36,16 @@ const Navbar = () => {
   return (
     <nav>
       <div className="content-wrapper-nav">
-        <a href="/index.html">
+        <Link to="/">
           <img src="logos/navbar-logo.svg" alt="Logo" className="logo" />
-        </a>
+        </Link>
         <div className="features-container">
           <ul>
             <li className="features">
-              <a href="#">Features</a>
+              <Link to="#">Features</Link>
             </li>
             <li className="contact">
-              <a href="/contact.html">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
@@ -58,10 +59,10 @@ const Navbar = () => {
           </li>
           <li className="sign-in-button">
             <button className="sign-in">
-              <a href="#" className="sign-in-link">
+              <Link to="#" className="sign-in-link">
                 <span className="icon material-icons">person_outlined</span>
                 Sign in/up
-              </a>
+              </Link>
             </button>
           </li>
           <div className="hamburger"></div>

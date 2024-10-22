@@ -33,12 +33,14 @@ body.dark-theme {
 }
 
 .content-wrapper-nav {
+  position: relative;
   padding-left: 1rem;
   padding-right: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 4.75rem;
+  z-index: 10;
 
   ul {
     list-style: none;
