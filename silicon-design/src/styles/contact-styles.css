@@ -22,6 +22,9 @@
   margin: 0 auto;
   position: relative;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 #contact-us .breadcrumb {
   display: flex;
@@ -56,6 +59,10 @@
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
+}
+#contact-us .contact-elements .contact-element {
+  display: flex;
+  gap: 1rem;
 }
 #contact-us .contact-elements a.leave-message,
 #contact-us .contact-elements a.send-application {
@@ -92,6 +99,7 @@
   flex-direction: column;
   width: 24.375rem;
   padding-bottom: 127px;
+  gap: 2rem;
 }
 #contact-us .contact-elements .contact-info h1 {
   color: #0b0f19;
@@ -108,17 +116,17 @@
   align-items: flex-start;
   margin-top: 4.5rem;
 }
-#contact-us .contact-elements .contact-info .email-us .email-us-text {
+#contact-us .contact-elements .contact-info .email-us-text {
   display: flex;
   flex-direction: column;
   gap: 1.5625rem;
 }
-#contact-us .contact-elements .contact-info .email-us .email-us-text h4 {
+#contact-us .contact-elements .contact-info .email-us-text h4 {
   color: #0b0f19;
   font-size: 1.5rem;
   font-weight: 800;
 }
-#contact-us .contact-elements .contact-info .email-us .email-us-text p {
+#contact-us .contact-elements .contact-info .email-us-text p {
   color: #565973;
   font-size: 1rem;
   font-weight: 400;
@@ -129,17 +137,17 @@
   align-items: flex-start;
   margin-top: 45px;
 }
-#contact-us .contact-elements .contact-info .careers .careers-text {
+#contact-us .contact-elements .contact-info .careers-text {
   display: flex;
   flex-direction: column;
   gap: 1.5625rem;
 }
-#contact-us .contact-elements .contact-info .careers .careers-text h4 {
+#contact-us .contact-elements .contact-info .careers-text h4 {
   color: #0b0f19;
   font-size: 1.5rem;
   font-weight: 800;
 }
-#contact-us .contact-elements .contact-info .careers .careers-text p {
+#contact-us .contact-elements .contact-info .careers-text p {
   color: #565973;
   font-size: 1rem;
   font-weight: 400;
@@ -235,6 +243,8 @@
   justify-content: space-between;
   margin-top: 6rem;
   margin-bottom: 33.875rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 #map-section .map-container img {
   height: 482px;
@@ -244,7 +254,7 @@
   display: flex;
   flex-direction: column;
   width: 31.25rem;
-  align-items: center;
+  align-items: flex-end;
   gap: 3.125rem;
   height: 100%;
 }
@@ -292,6 +302,13 @@
 }
 #map-section .map-container .addresses .medical-center .times-wrapper .time-entry .material-icons-outlined {
   color: #6366f1;
+}
+#map-section .map-container .addresses .medical-center .times-wrapper .time-entry .time-text {
+  display: inline;
+  font-weight: normal;
+}
+#map-section .map-container .addresses .medical-center .times-wrapper .time-entry .time-text b {
+  font-weight: bold;
 }
 #map-section .map-container .addresses .medical-center .times-wrapper .time-entry.no-icon {
   padding-left: 1.9375rem;

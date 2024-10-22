@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const location = useLocation();
+  const isContactPage = location.pathname === "/contact";
   useEffect(() => {
     const themeToggle = document.getElementById("theme-toggle");
     const savedTheme = localStorage.getItem("theme") || "light-theme";
@@ -34,7 +36,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav>
+    <nav className={isContactPage ? "contact-navbar" : ""}>
       <div className="content-wrapper-nav">
         <Link to="/">
           <img src="logos/navbar-logo.svg" alt="Logo" className="logo" />

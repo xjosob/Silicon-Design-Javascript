@@ -14,12 +14,14 @@ const AdressItem = ({ name, location, phone, hours }) => {
         <div className="time-entry">
           <span className="material-icons-outlined">schedule</span>
           <div className="time-text">
-            <b>{hours.weekdays}</b>
+            <b>{hours.weekdays.split(": ")[0]}</b>:
+            {hours.weekdays.split(": ")[1]}
           </div>
         </div>
         <div className="time-entry no-icon">
           <div className="time-text">
-            <b>{hours.weekend}</b>
+            <b>{hours.weekend.split(": ")[0]}</b>:{" "}
+            {hours.weekend.split(": ")[1]}
           </div>
         </div>
       </div>

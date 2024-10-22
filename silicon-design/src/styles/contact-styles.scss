@@ -27,6 +27,9 @@
     margin: 0 auto;
     position: relative;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 
   .breadcrumb {
@@ -68,6 +71,10 @@
     align-items: flex-start;
     position: relative;
 
+    .contact-element {
+      display: flex;
+      gap: 1rem;
+    }
     a.leave-message,
     a.send-application {
       @each $property, $value in $navigation-hover {
@@ -104,6 +111,7 @@
       flex-direction: column;
       width: 24.375rem;
       padding-bottom: 127px;
+      gap: 2rem;
 
       h1 {
         @each $property, $value in $heading-h1 {
@@ -120,22 +128,22 @@
         gap: 1.5rem;
         align-items: flex-start;
         margin-top: 4.5rem;
+      }
 
-        .email-us-text {
-          display: flex;
-          flex-direction: column;
-          gap: 1.5625rem;
+      .email-us-text {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5625rem;
 
-          h4 {
-            @each $property, $value in $heading-h4 {
-              #{$property}: $value;
-            }
+        h4 {
+          @each $property, $value in $heading-h4 {
+            #{$property}: $value;
           }
+        }
 
-          p {
-            @each $property, $value in $m-text {
-              #{$property}: $value;
-            }
+        p {
+          @each $property, $value in $m-text {
+            #{$property}: $value;
           }
         }
       }
@@ -145,21 +153,21 @@
         gap: 1.5rem;
         align-items: flex-start;
         margin-top: 45px;
+      }
 
-        .careers-text {
-          display: flex;
-          flex-direction: column;
-          gap: 1.5625rem;
+      .careers-text {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5625rem;
 
-          h4 {
-            @each $property, $value in $heading-h4 {
-              #{$property}: $value;
-            }
+        h4 {
+          @each $property, $value in $heading-h4 {
+            #{$property}: $value;
           }
-          p {
-            @each $property, $value in $m-text {
-              #{$property}: $value;
-            }
+        }
+        p {
+          @each $property, $value in $m-text {
+            #{$property}: $value;
           }
         }
       }
@@ -261,6 +269,8 @@
     justify-content: space-between;
     margin-top: 6rem;
     margin-bottom: 33.875rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
     img {
       height: 482px;
@@ -271,7 +281,7 @@
       display: flex;
       flex-direction: column;
       width: 31.25rem;
-      align-items: center;
+      align-items: flex-end;
       gap: 3.125rem;
       height: 100%;
 
@@ -322,6 +332,15 @@
 
             .material-icons-outlined {
               color: $primary;
+            }
+
+            .time-text {
+              display: inline;
+              font-weight: normal;
+
+              b {
+                font-weight: bold;
+              }
             }
           }
 

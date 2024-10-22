@@ -8,7 +8,7 @@ import Contact from "./components/Contact/Contact";
 const App = () => {
   return (
     <Router>
-      <Navbar />
+      <Navbar isContactPage={location.pathname === "/contact"} />
       <Routes>
         <Route
           path="/"
