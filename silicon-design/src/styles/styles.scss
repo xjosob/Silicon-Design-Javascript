@@ -338,6 +338,10 @@ body.dark-theme .hero {
     rgba(241, 244, 253, 0.07) 82.52%
   );
 
+  .hero-content {
+    margin-top: 2rem;
+  }
+
   .content-wrapper-hero {
     .hero-container {
       .hero-title {
@@ -374,11 +378,10 @@ body.dark-theme .hero {
 }
 
 main {
-  margin-top: 2rem;
-
   #brands {
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-top: 6rem;
 
     img {
       max-width: 100%;

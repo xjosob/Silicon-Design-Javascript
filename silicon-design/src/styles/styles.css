@@ -462,6 +462,9 @@ body.dark-theme nav .theme-text {
 body.dark-theme .hero {
   background: radial-gradient(120.91% 118.4% at 50% 100%, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%);
 }
+body.dark-theme .hero .hero-content {
+  margin-top: 2rem;
+}
 body.dark-theme .hero .content-wrapper-hero .hero-container .hero-title {
   color: white;
 }
@@ -486,12 +489,10 @@ body.dark-theme .hero .content-wrapper-hero .discover-more-text {
   opacity: 0.7;
 }
 
-main {
-  margin-top: 2rem;
-}
 main #brands {
   padding-left: 1rem;
   padding-right: 1rem;
+  margin-top: 6rem;
 }
 main #brands img {
   max-width: 100%;
