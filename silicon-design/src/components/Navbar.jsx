@@ -1,9 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
   const isContactPage = location.pathname === "/contact";
+
   useEffect(() => {
     const themeToggle = document.getElementById("theme-toggle");
     const savedTheme = localStorage.getItem("theme") || "light-theme";
@@ -35,14 +37,18 @@ const Navbar = () => {
     };
   }, []);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav className={isContactPage ? "contact-navbar" : ""}>
       <div className="content-wrapper-nav">
         <Link to="/">
           <img src="logos/navbar-logo.svg" alt="Logo" className="logo" />
         </Link>
-        <div className="features-container">
-          <ul>
+        <div className={`features-container ${isMenuOpen ? "open" : ""}`}>
+          <ul className={`nav-items ${isMenuOpen ? "open" : ""}`}>
             <li className="features">
               <Link to="#">Features</Link>
             </li>
@@ -51,7 +57,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <ul>
+        <ul className="utility-items">
           <li className="theme-text">Dark Mode</li>
           <li className="toggle-container">
             <label className="switch" htmlFor="theme-toggle">
@@ -67,7 +73,10 @@ const Navbar = () => {
               </Link>
             </button>
           </li>
-          <div className="hamburger"></div>
+          <div
+            className={`hamburger ${isMenuOpen ? "open" : ""}`}
+            onClick={toggleMenu}
+          ></div>
         </ul>
       </div>
     </nav>

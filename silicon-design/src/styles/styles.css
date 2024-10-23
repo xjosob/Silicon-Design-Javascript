@@ -41,11 +41,10 @@ nav.contact-navbar {
   height: 4.75rem;
   z-index: 10;
 }
-.content-wrapper-nav ul {
-  list-style: none;
+.content-wrapper-nav .utility-items {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  list-style: none;
 }
 .content-wrapper-nav .theme-text {
   color: #565973;
@@ -58,42 +57,53 @@ nav.contact-navbar {
   display: flex;
   align-items: center;
   flex-grow: 1;
-  list-style: none;
 }
-.content-wrapper-nav .features {
+.content-wrapper-nav .features-container ul.nav-items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.content-wrapper-nav .features-container ul.nav-items.open {
+  display: flex;
+}
+
+.features {
   color: #33354d;
   font-size: 16px;
   font-weight: 600;
   margin-left: 3rem;
   line-height: 160%;
 }
-.content-wrapper-nav .features a {
+.features a {
   color: inherit;
   text-decoration: none;
 }
-.content-wrapper-nav .features a:hover {
+.features a:hover {
   color: #6366f1;
 }
-.content-wrapper-nav .contact {
+
+.contact {
   color: #33354d;
   font-size: 16px;
   font-weight: 600;
   line-height: 160%;
 }
-.content-wrapper-nav .contact a {
+.contact a {
   color: inherit;
   text-decoration: none;
 }
-.content-wrapper-nav .contact a:hover {
+.contact a:hover {
   color: #6366f1;
 }
-.content-wrapper-nav .sign-in-button {
+
+.sign-in-button {
   gap: 0;
 }
-.content-wrapper-nav .sign-in-button a {
+.sign-in-button a {
   text-decoration: none;
 }
-.content-wrapper-nav .sign-in-button .sign-in {
+.sign-in-button .sign-in {
   background-color: #6366f1;
   transition: background-color 0.3s ease, transform 0.2s ease;
   color: white;
@@ -121,200 +131,215 @@ nav.contact-navbar {
   gap: 0.5rem;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
-.content-wrapper-nav .sign-in-button .sign-in:hover, .content-wrapper-nav .sign-in-button .sign-in:focus {
+.sign-in-button .sign-in:hover, .sign-in-button .sign-in:focus {
   background-color: #5558f0;
   transform: translateY(-2px);
 }
-.content-wrapper-nav .sign-in-button .sign-in:active {
+.sign-in-button .sign-in:active {
   background-color: #7a7df3;
 }
-.content-wrapper-nav .sign-in-button .sign-in .sign-in-link {
+.sign-in-button .sign-in .sign-in-link {
   text-decoration: none;
   color: inherit;
   display: flex;
   align-items: center;
 }
-.content-wrapper-nav .sign-in-button .sign-in:hover, .content-wrapper-nav .sign-in-button .sign-in:focus {
+.sign-in-button .sign-in:hover, .sign-in-button .sign-in:focus {
   background-color: #5558f0;
   transform: translateY(-2px);
 }
-.content-wrapper-nav .sign-in-button .sign-in:active {
+.sign-in-button .sign-in:active {
   background-color: #7a7df3;
 }
-.content-wrapper-nav .sign-in-button .sign-in .sign-in-link {
+.sign-in-button .sign-in .sign-in-link {
   text-decoration: none;
   color: inherit;
   display: flex;
   align-items: center;
 }
-.content-wrapper-nav .sign-in-button .sign-in:hover, .content-wrapper-nav .sign-in-button .sign-in:focus {
+.sign-in-button .sign-in:hover, .sign-in-button .sign-in:focus {
   background-color: #5558f0;
   transform: translateY(-2px);
 }
-.content-wrapper-nav .sign-in-button .sign-in:active {
+.sign-in-button .sign-in:active {
   background-color: #7a7df3;
 }
-.content-wrapper-nav .sign-in-button .sign-in .sign-in-link {
+.sign-in-button .sign-in .sign-in-link {
   text-decoration: none;
   color: inherit;
   display: flex;
   align-items: center;
 }
-.content-wrapper-nav .sign-in-button .sign-in:hover, .content-wrapper-nav .sign-in-button .sign-in:focus {
+.sign-in-button .sign-in:hover, .sign-in-button .sign-in:focus {
   background-color: #5558f0;
   transform: translateY(-2px);
 }
-.content-wrapper-nav .sign-in-button .sign-in:active {
+.sign-in-button .sign-in:active {
   background-color: #7a7df3;
 }
-.content-wrapper-nav .sign-in-button .sign-in .sign-in-link {
+.sign-in-button .sign-in .sign-in-link {
   text-decoration: none;
   color: inherit;
   display: flex;
   align-items: center;
 }
-.content-wrapper-nav .sign-in-button .sign-in:hover, .content-wrapper-nav .sign-in-button .sign-in:focus {
+.sign-in-button .sign-in:hover, .sign-in-button .sign-in:focus {
   background-color: #5558f0;
   transform: translateY(-2px);
 }
-.content-wrapper-nav .sign-in-button .sign-in:active {
+.sign-in-button .sign-in:active {
   background-color: #7a7df3;
 }
-.content-wrapper-nav .sign-in-button .sign-in .sign-in-link {
+.sign-in-button .sign-in .sign-in-link {
   text-decoration: none;
   color: inherit;
   display: flex;
   align-items: center;
 }
-.content-wrapper-nav .sign-in-button .sign-in:hover, .content-wrapper-nav .sign-in-button .sign-in:focus {
+.sign-in-button .sign-in:hover, .sign-in-button .sign-in:focus {
   background-color: #5558f0;
   transform: translateY(-2px);
 }
-.content-wrapper-nav .sign-in-button .sign-in:active {
+.sign-in-button .sign-in:active {
   background-color: #7a7df3;
 }
-.content-wrapper-nav .sign-in-button .sign-in .sign-in-link {
+.sign-in-button .sign-in .sign-in-link {
   text-decoration: none;
   color: inherit;
   display: flex;
   align-items: center;
 }
-.content-wrapper-nav .sign-in-button .sign-in:hover, .content-wrapper-nav .sign-in-button .sign-in:focus {
+.sign-in-button .sign-in:hover, .sign-in-button .sign-in:focus {
   background-color: #5558f0;
   transform: translateY(-2px);
 }
-.content-wrapper-nav .sign-in-button .sign-in:active {
+.sign-in-button .sign-in:active {
   background-color: #7a7df3;
 }
-.content-wrapper-nav .sign-in-button .sign-in .sign-in-link {
+.sign-in-button .sign-in .sign-in-link {
   text-decoration: none;
   color: inherit;
   display: flex;
   align-items: center;
 }
-.content-wrapper-nav .sign-in-button .sign-in:hover, .content-wrapper-nav .sign-in-button .sign-in:focus {
+.sign-in-button .sign-in:hover, .sign-in-button .sign-in:focus {
   background-color: #5558f0;
   transform: translateY(-2px);
 }
-.content-wrapper-nav .sign-in-button .sign-in:active {
+.sign-in-button .sign-in:active {
   background-color: #7a7df3;
 }
-.content-wrapper-nav .sign-in-button .sign-in .sign-in-link {
+.sign-in-button .sign-in .sign-in-link {
   text-decoration: none;
   color: inherit;
   display: flex;
   align-items: center;
 }
-.content-wrapper-nav .sign-in-button .sign-in:hover, .content-wrapper-nav .sign-in-button .sign-in:focus {
+.sign-in-button .sign-in:hover, .sign-in-button .sign-in:focus {
   background-color: #5558f0;
   transform: translateY(-2px);
 }
-.content-wrapper-nav .sign-in-button .sign-in:active {
+.sign-in-button .sign-in:active {
   background-color: #7a7df3;
 }
-.content-wrapper-nav .sign-in-button .sign-in .sign-in-link {
+.sign-in-button .sign-in .sign-in-link {
   text-decoration: none;
   color: inherit;
   display: flex;
   align-items: center;
 }
-.content-wrapper-nav .sign-in-button .sign-in:hover, .content-wrapper-nav .sign-in-button .sign-in:focus {
+.sign-in-button .sign-in:hover, .sign-in-button .sign-in:focus {
   background-color: #5558f0;
   transform: translateY(-2px);
 }
-.content-wrapper-nav .sign-in-button .sign-in:active {
+.sign-in-button .sign-in:active {
   background-color: #7a7df3;
 }
-.content-wrapper-nav .sign-in-button .sign-in .sign-in-link {
+.sign-in-button .sign-in .sign-in-link {
   text-decoration: none;
   color: inherit;
   display: flex;
   align-items: center;
 }
-.content-wrapper-nav .sign-in-button .sign-in:hover, .content-wrapper-nav .sign-in-button .sign-in:focus {
+.sign-in-button .sign-in:hover, .sign-in-button .sign-in:focus {
   background-color: #5558f0;
   transform: translateY(-2px);
 }
-.content-wrapper-nav .sign-in-button .sign-in:active {
+.sign-in-button .sign-in:active {
   background-color: #7a7df3;
 }
-.content-wrapper-nav .sign-in-button .sign-in .sign-in-link {
+.sign-in-button .sign-in .sign-in-link {
   text-decoration: none;
   color: inherit;
   display: flex;
   align-items: center;
 }
-.content-wrapper-nav .sign-in-button .sign-in:hover, .content-wrapper-nav .sign-in-button .sign-in:focus {
+.sign-in-button .sign-in:hover, .sign-in-button .sign-in:focus {
   background-color: #5558f0;
   transform: translateY(-2px);
 }
-.content-wrapper-nav .sign-in-button .sign-in:active {
+.sign-in-button .sign-in:active {
   background-color: #7a7df3;
 }
-.content-wrapper-nav .sign-in-button .sign-in .sign-in-link {
+.sign-in-button .sign-in .sign-in-link {
   text-decoration: none;
   color: inherit;
   display: flex;
   align-items: center;
 }
-.content-wrapper-nav .sign-in-button .sign-in:hover, .content-wrapper-nav .sign-in-button .sign-in:focus {
+.sign-in-button .sign-in:hover, .sign-in-button .sign-in:focus {
   background-color: #5558f0;
   transform: translateY(-2px);
 }
-.content-wrapper-nav .sign-in-button .sign-in:active {
+.sign-in-button .sign-in:active {
   background-color: #7a7df3;
 }
-.content-wrapper-nav .sign-in-button .sign-in .sign-in-link {
+.sign-in-button .sign-in .sign-in-link {
   text-decoration: none;
   color: inherit;
   display: flex;
   align-items: center;
 }
-.content-wrapper-nav .sign-in-button .sign-in .icon {
+.sign-in-button .sign-in .icon {
   font-size: 1.4375rem;
 }
-.content-wrapper-nav .toggle-container {
+
+.toggle-container {
   margin-right: 2rem;
 }
-.content-wrapper-nav .hamburger {
+
+.hamburger {
   display: none;
   width: 1.875rem;
   height: 2.25rem;
   background-image: url("/buttons/Hamburger.svg");
   margin-right: 1rem;
+  cursor: pointer;
+  position: relative;
 }
-.content-wrapper-nav .switch {
+.hamburger.open {
+  background-image: url("/buttons/Close.svg");
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.switch {
   position: relative;
   display: block;
   width: 46px;
   height: 26px;
 }
-.content-wrapper-nav .switch input {
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
-.content-wrapper-nav .slider {
+
+.slider {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -324,7 +349,8 @@ nav.contact-navbar {
   background-color: #9397ad;
   transition: 0.4s;
 }
-.content-wrapper-nav .slider:before {
+
+.slider:before {
   position: absolute;
   content: "";
   height: 18px;
@@ -334,19 +360,24 @@ nav.contact-navbar {
   background-color: white;
   transition: 0.4s;
 }
-.content-wrapper-nav input:checked + .slider {
+
+input:checked + .slider {
   background-color: #6366f1;
 }
-.content-wrapper-nav input:focus + .slider {
+
+input:focus + .slider {
   box-shadow: 0 0 1px #6366f1;
 }
-.content-wrapper-nav input:checked + .slider:before {
+
+input:checked + .slider:before {
   transform: translateX(20px);
 }
-.content-wrapper-nav .slider.round {
+
+.slider.round {
   border-radius: 34px;
 }
-.content-wrapper-nav .slider.round:before {
+
+.slider.round:before {
   border-radius: 50%;
 }
 
@@ -1243,8 +1274,22 @@ body.dark-theme footer p {
   .content-wrapper-nav {
     padding: 0 1.1875rem;
   }
-  .content-wrapper-nav .features {
+  .content-wrapper-nav .features-container ul.nav-items {
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-start;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+    width: 12.5rem;
     display: none;
+    z-index: 5;
+  }
+  .content-wrapper-nav .features-container ul.nav-items.open {
+    display: flex;
   }
   .content-wrapper-nav .hamburger {
     display: block;
