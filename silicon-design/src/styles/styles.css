@@ -443,6 +443,7 @@ body.dark-theme nav .theme-text {
   width: 11.25rem;
   height: 3.25rem;
   border: none;
+  cursor: pointer;
 }
 .hero .content-wrapper-hero .hero-container .market-buttons-container .button-google-play {
   background-image: url("/buttons/googleplay.svg");
@@ -450,6 +451,7 @@ body.dark-theme nav .theme-text {
   width: 11.25rem;
   height: 3.25rem;
   border: none;
+  cursor: pointer;
 }
 .hero .content-wrapper-hero .hero-phones {
   display: flex;
@@ -482,6 +484,7 @@ body.dark-theme nav .theme-text {
   border: none;
   font-size: 2em;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -930,6 +933,17 @@ main #faq-section .faq-questions-container .faq-question .faq-chevron {
   width: 36px;
   height: 36px;
   font-size: 1.5em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transform: rotate(90deg);
+  justify-content: center;
+  box-shadow: none;
+  background-color: #f3f6ff;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  font-size: 1.5em;
 }
 main #faq-section .faq-question-expanded {
   display: flex;
@@ -1043,6 +1057,17 @@ main #faq-section .faq-question-expanded .faq-chevron {
   height: 36px;
   font-size: 1.5em;
   color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6366f1;
+  transform: rotate(270deg);
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  font-size: 1.5em;
+  color: white;
 }
 main .faq-contact-container-tablet,
 main .faq-questions-container-tablet {
@@ -1113,6 +1138,7 @@ main #subscribe .subscribe-btn {
   padding: 0.625rem 1.25rem;
   border-radius: 0px 8px 8px 0px;
   font-size: 16px;
+  cursor: pointer;
 }
 
 body.dark-theme main #brands .brand-box {
@@ -1186,9 +1212,11 @@ body.dark-theme main #faq-section .faq-subtitle {
 }
 body.dark-theme main #faq-section .faq-contact-container .contact-image-box .icon-box {
   content: url(images/icon-box-dark.svg);
+  cursor: pointer;
 }
 body.dark-theme main #faq-section .faq-contact-container .icon-box-2 {
   content: url(images/icon-box-2-dark.svg);
+  cursor: pointer;
 }
 body.dark-theme main #faq-section .faq-questions-container .faq-question {
   background-color: rgba(255, 255, 255, 0.04);
@@ -1598,6 +1626,17 @@ body.dark-theme footer p {
     width: 36px;
     height: 36px;
     font-size: 1.5em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transform: rotate(90deg);
+    justify-content: center;
+    box-shadow: none;
+    background-color: #f3f6ff;
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    font-size: 1.5em;
   }
   main #faq-section .faq-questions-container-tablet .faq-question-expanded-tablet {
     display: flex;
@@ -1703,6 +1742,17 @@ body.dark-theme footer p {
     font-size: 1.5em;
     color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6366f1;
+    transform: rotate(270deg);
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2176,6 +2226,17 @@ body.dark-theme footer p {
     width: 36px;
     height: 36px;
     font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transform: rotate(90deg);
+    justify-content: center;
+    box-shadow: none;
+    background-color: #f3f6ff;
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
   }
   main #faq-section .faq-question-expanded-mobile {
     display: flex;
@@ -2275,6 +2336,17 @@ body.dark-theme footer p {
     font-size: 1.5em;
     color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6366f1;
+    transform: rotate(270deg);
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;

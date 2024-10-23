@@ -888,6 +888,7 @@ main {
       padding: 0.625rem 1.25rem;
       border-radius: 0px 8px 8px 0px;
       font-size: 16px;
+      cursor: pointer;
     }
   }
 }
@@ -999,11 +1000,13 @@ body.dark-theme main {
       .contact-image-box {
         .icon-box {
           content: url(images/icon-box-dark.svg);
+          cursor: pointer;
         }
       }
 
       .icon-box-2 {
         content: url(images/icon-box-2-dark.svg);
+        cursor: pointer;
       }
     }
 

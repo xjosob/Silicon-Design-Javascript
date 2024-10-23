@@ -21,6 +21,7 @@
     background-color: white;
     z-index: 1;
   }
+
   .contact-us-container {
     width: 100%;
     max-width: 81rem;
@@ -260,6 +261,85 @@
   }
 }
 
+body.dark-theme .contact-navbar {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+body.dark-theme #contact-us {
+  background: rgba(255, 255, 255, 0.04);
+
+  .contact-info {
+    h1 {
+      color: white;
+    }
+
+    .contact-element {
+      a.leave-message,
+      a.send-application {
+        &:hover,
+        &:focus {
+          color: #d946ef;
+        }
+      }
+
+      &:active {
+        color: lighten($primary, 10%);
+      }
+      .email-us-image {
+        content: url("icons/email-us-dark.svg");
+      }
+      .careers-image {
+        content: url("icons/careers-dark.svg");
+      }
+
+      .email-us-text,
+      .careers-text {
+        h4 {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .consultation {
+    background-color: #0b0f19fa;
+    box-shadow: 2px 4px 15px rgba(255, 255, 255, 0.13);
+
+    .consultation-wrapper {
+      h3 {
+        color: #f3f6ff;
+      }
+
+      #consultation-form {
+        .form-group {
+          input,
+          select {
+            background-color: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            color: #f3f6ff;
+          }
+
+          label {
+            color: #f3f6ff;
+            opacity: 0.7;
+          }
+
+          input:focus,
+          select:focus {
+            outline: none;
+            border: 2px solid $primary;
+            box-shadow: 0 0 5px rgba($primary, 0.5);
+          }
+        }
+      }
+    }
+  }
+}
+
+body.dark-theme #contact-us::after {
+  background-color: #0b0f19;
+}
+
 #map-section {
   .map-container {
     display: flex;
@@ -396,6 +476,61 @@
     .youtube {
       @each $property, $value in $youtube-button {
         #{$property}: $value;
+      }
+    }
+  }
+}
+
+body.dark-theme #map-section {
+  .addresses {
+    button {
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.09);
+        transform: scale(1.1);
+      }
+    }
+
+    .facebook {
+      @each $property, $value in $facebook-button {
+        #{$property}: $value;
+        background-color: rgba(255, 255, 255, 0.05);
+        background-image: url("icons/bxl-facebook-square-dark.svg");
+      }
+    }
+    .twitter {
+      @each $property, $value in $twitter-button {
+        #{$property}: $value;
+        background-color: rgba(255, 255, 255, 0.05);
+        background-image: url("/icons/bxl-twitter-dark.svg");
+      }
+    }
+    .instagram {
+      @each $property, $value in $instagram-button {
+        #{$property}: $value;
+        background-color: rgba(255, 255, 255, 0.05);
+        background-image: url("/icons/bxl-instagram-alt-dark.svg");
+      }
+    }
+    .youtube {
+      @each $property, $value in $youtube-button {
+        #{$property}: $value;
+        background-color: rgba(255, 255, 255, 0.05);
+        background-image: url("/icons/bxl-youtube-dark.svg");
+      }
+    }
+    .medical-center {
+      h4 {
+        color: white;
+      }
+
+      .times-wrapper {
+        .time-entry {
+          .time-text {
+            b {
+              color: #565973;
+            }
+          }
+        }
       }
     }
   }

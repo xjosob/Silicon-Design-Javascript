@@ -235,6 +235,62 @@
   background-color: #7a7df3;
 }
 
+body.dark-theme .contact-navbar {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+body.dark-theme #contact-us {
+  background: rgba(255, 255, 255, 0.04);
+}
+body.dark-theme #contact-us .contact-info h1 {
+  color: white;
+}
+body.dark-theme #contact-us .contact-info .contact-element a.leave-message:hover, body.dark-theme #contact-us .contact-info .contact-element a.leave-message:focus,
+body.dark-theme #contact-us .contact-info .contact-element a.send-application:hover,
+body.dark-theme #contact-us .contact-info .contact-element a.send-application:focus {
+  color: #d946ef;
+}
+body.dark-theme #contact-us .contact-info .contact-element:active {
+  color: #9294f5;
+}
+body.dark-theme #contact-us .contact-info .contact-element .email-us-image {
+  content: url("icons/email-us-dark.svg");
+}
+body.dark-theme #contact-us .contact-info .contact-element .careers-image {
+  content: url("icons/careers-dark.svg");
+}
+body.dark-theme #contact-us .contact-info .contact-element .email-us-text h4,
+body.dark-theme #contact-us .contact-info .contact-element .careers-text h4 {
+  color: white;
+}
+body.dark-theme #contact-us .consultation {
+  background-color: rgba(11, 15, 25, 0.9803921569);
+  box-shadow: 2px 4px 15px rgba(255, 255, 255, 0.13);
+}
+body.dark-theme #contact-us .consultation .consultation-wrapper h3 {
+  color: #f3f6ff;
+}
+body.dark-theme #contact-us .consultation .consultation-wrapper #consultation-form .form-group input,
+body.dark-theme #contact-us .consultation .consultation-wrapper #consultation-form .form-group select {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #f3f6ff;
+}
+body.dark-theme #contact-us .consultation .consultation-wrapper #consultation-form .form-group label {
+  color: #f3f6ff;
+  opacity: 0.7;
+}
+body.dark-theme #contact-us .consultation .consultation-wrapper #consultation-form .form-group input:focus,
+body.dark-theme #contact-us .consultation .consultation-wrapper #consultation-form .form-group select:focus {
+  outline: none;
+  border: 2px solid #6366f1;
+  box-shadow: 0 0 5px rgba(99, 102, 241, 0.5);
+}
+
+body.dark-theme #contact-us::after {
+  background-color: #0b0f19;
+}
+
 #map-section .map-container {
   display: flex;
   width: 100%;
@@ -383,4 +439,143 @@
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
+}
+
+body.dark-theme #map-section .addresses button:hover {
+  background-color: rgba(255, 255, 255, 0.09);
+  transform: scale(1.1);
+}
+body.dark-theme #map-section .addresses .facebook {
+  background-image: url("/icons/bxl-facebook-square.svg");
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("icons/bxl-facebook-square-dark.svg");
+  width: 44px;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("icons/bxl-facebook-square-dark.svg");
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("icons/bxl-facebook-square-dark.svg");
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("icons/bxl-facebook-square-dark.svg");
+  border: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("icons/bxl-facebook-square-dark.svg");
+  background-color: #eff2fc;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("icons/bxl-facebook-square-dark.svg");
+  background-size: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("icons/bxl-facebook-square-dark.svg");
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("icons/bxl-facebook-square-dark.svg");
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("icons/bxl-facebook-square-dark.svg");
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("icons/bxl-facebook-square-dark.svg");
+}
+body.dark-theme #map-section .addresses .twitter {
+  background-image: url("/icons/bxl-twitter.svg");
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-twitter-dark.svg");
+  width: 44px;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-twitter-dark.svg");
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-twitter-dark.svg");
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-twitter-dark.svg");
+  border: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-twitter-dark.svg");
+  background-color: #eff2fc;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-twitter-dark.svg");
+  background-size: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-twitter-dark.svg");
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-twitter-dark.svg");
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-twitter-dark.svg");
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-twitter-dark.svg");
+}
+body.dark-theme #map-section .addresses .instagram {
+  background-image: url("/icons/bxl-instagram-alt.svg");
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-instagram-alt-dark.svg");
+  width: 44px;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-instagram-alt-dark.svg");
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-instagram-alt-dark.svg");
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-instagram-alt-dark.svg");
+  border: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-instagram-alt-dark.svg");
+  background-color: #eff2fc;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-instagram-alt-dark.svg");
+  background-size: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-instagram-alt-dark.svg");
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-instagram-alt-dark.svg");
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-instagram-alt-dark.svg");
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-instagram-alt-dark.svg");
+}
+body.dark-theme #map-section .addresses .youtube {
+  background-image: url("/icons/bxl-youtube.svg");
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-youtube-dark.svg");
+  width: 44px;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-youtube-dark.svg");
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-youtube-dark.svg");
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-youtube-dark.svg");
+  border: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-youtube-dark.svg");
+  background-color: #eff2fc;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-youtube-dark.svg");
+  background-size: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-youtube-dark.svg");
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-youtube-dark.svg");
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-youtube-dark.svg");
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url("/icons/bxl-youtube-dark.svg");
+}
+body.dark-theme #map-section .addresses .medical-center h4 {
+  color: white;
+}
+body.dark-theme #map-section .addresses .medical-center .times-wrapper .time-entry .time-text b {
+  color: #565973;
 }/*# sourceMappingURL=contact-styles.css.map */

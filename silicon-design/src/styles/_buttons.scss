@@ -52,6 +52,7 @@ $button-app-store: (
   width: 11.25rem,
   height: 3.25rem,
   border: none,
+  cursor: pointer,
 );
 
 $button-google-play: (
@@ -60,6 +61,7 @@ $button-google-play: (
   width: 11.25rem,
   height: 3.25rem,
   border: none,
+  cursor: pointer,
 );
 
 $mobile-button-app-store: (
@@ -89,6 +91,7 @@ $carousel-button: (
   border: none,
   font-size: 2em,
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2),
+  cursor: pointer,
 );
 
 $facebook-button: (
