@@ -317,9 +317,6 @@ nav.contact-navbar {
   cursor: pointer;
   position: relative;
 }
-.hamburger.open {
-  background-image: url("/buttons/Close.svg");
-}
 
 .nav-items {
   display: flex;
@@ -498,9 +495,6 @@ body.dark-theme nav .theme-text {
 
 body.dark-theme .hero {
   background: radial-gradient(120.91% 118.4% at 50% 100%, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%);
-}
-body.dark-theme .hero .hero-content {
-  margin-top: 2rem;
 }
 body.dark-theme .hero .content-wrapper-hero .hero-container .hero-title {
   color: white;
@@ -1286,10 +1280,13 @@ body.dark-theme footer p {
     padding: 1rem;
     width: 12.5rem;
     display: none;
-    z-index: 5;
+    gap: 0.3125rem;
   }
   .content-wrapper-nav .features-container ul.nav-items.open {
     display: flex;
+  }
+  .content-wrapper-nav .features {
+    margin-left: 0;
   }
   .content-wrapper-nav .hamburger {
     display: block;
@@ -1310,8 +1307,21 @@ body.dark-theme footer p {
   body.dark-theme nav .hamburger {
     background-image: url("/buttons/Hamburger-dark.svg");
   }
+  body.dark-theme nav .features-container ul.nav-items {
+    background: radial-gradient(118% 116.18% at 50% 100%, rgba(99, 101, 241, 0.121) 0%, rgba(218, 70, 239, 0.06) 50%, rgba(51, 42, 87, 0.436) 100%);
+    box-shadow: 0 3px 15px rgba(255, 255, 255, 0.12);
+  }
+  body.dark-theme nav .features-container ul.nav-items li a {
+    color: white;
+  }
+  body.dark-theme nav .features-container ul.nav-items li a:hover {
+    color: #6366f1;
+  }
   .hero {
     padding: 0 1.1875rem;
+  }
+  .hero .content-wrapper-hero {
+    margin-top: 0.9375rem;
   }
   .hero .content-wrapper-hero .mobile-buttons-wrapper {
     display: none;
@@ -1830,6 +1840,11 @@ body.dark-theme footer p {
   .content-wrapper-nav .switch .slider.round {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
   }
+  .content-wrapper-nav .features-container ul.nav-items {
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+  }
   .content-wrapper-nav .hamburger {
     margin-left: 1.5rem;
     padding-right: 1rem;
@@ -1837,6 +1852,9 @@ body.dark-theme footer p {
   }
   .hero {
     padding: 0%;
+  }
+  .hero .content-wrapper-hero {
+    margin-top: 0.9375rem;
   }
   .hero .content-wrapper-hero .hero-phones {
     display: none;

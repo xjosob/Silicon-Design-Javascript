@@ -156,10 +156,6 @@ nav.contact-navbar {
   margin-right: 1rem;
   cursor: pointer;
   position: relative;
-
-  &.open {
-    background-image: url("/buttons/Close.svg");
-  }
 }
 
 .nav-items {
@@ -364,10 +360,6 @@ body.dark-theme .hero {
     rgba(218, 70, 239, 0.05) 41.83%,
     rgba(241, 244, 253, 0.07) 82.52%
   );
-
-  .hero-content {
-    margin-top: 2rem;
-  }
 
   .content-wrapper-hero {
     .hero-container {
@@ -1122,12 +1114,16 @@ body.dark-theme footer {
         padding: 1rem;
         width: 12.5rem;
         display: none;
-        z-index: 5;
+        gap: 0.3125rem;
 
         &.open {
           display: flex;
         }
       }
+    }
+
+    .features {
+      margin-left: 0;
     }
 
     .hamburger {
@@ -1154,12 +1150,35 @@ body.dark-theme footer {
     .hamburger {
       background-image: url("/buttons/Hamburger-dark.svg");
     }
+
+    .features-container {
+      ul.nav-items {
+        background: radial-gradient(
+          118% 116.18% at 50% 100%,
+          rgba(99, 101, 241, 0.121) 0%,
+          rgba(218, 70, 239, 0.06) 50%,
+          rgba(51, 42, 87, 0.436) 100%
+        );
+        box-shadow: 0 3px 15px rgba(255, 255, 255, 0.12);
+
+        li {
+          a {
+            color: white;
+
+            &:hover {
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
   }
 
   .hero {
     padding: 0 1.1875rem;
 
     .content-wrapper-hero {
+      margin-top: 0.9375rem;
       .mobile-buttons-wrapper {
         display: none;
       }
@@ -1623,6 +1642,14 @@ body.dark-theme footer {
         }
       }
 
+      .features-container {
+        ul.nav-items {
+          flex-direction: row;
+          gap: 1rem;
+          justify-content: center;
+        }
+      }
+
       .hamburger {
         margin-left: 1.5rem;
         padding-right: 1rem;
@@ -1634,6 +1661,7 @@ body.dark-theme footer {
       padding: 0%;
 
       .content-wrapper-hero {
+        margin-top: 0.9375rem;
         .hero-phones {
           display: none;
         }
