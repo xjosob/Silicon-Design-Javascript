@@ -4,6 +4,7 @@ import { fetchFAQ } from "../services/apiService";
 const FAQ = () => {
   const [faqData, setFaqData] = useState([]);
   const [error, setError] = useState(null);
+  const [expandedFAQ, setExpandedFAQ] = useState({});
 
   useEffect(() => {
     const fetchData = async () => {
@@ -16,6 +17,14 @@ const FAQ = () => {
     };
     fetchData();
   }, []);
+
+  const toggleFAQ = (id) => {
+    setExpandedFAQ((prev) => ({
+      ...prev,
+      [id]: !prev[id],
+    }));
+  };
+
   return (
     <section id="faq-section">
       <div className="faq-contact-container">
@@ -44,11 +53,21 @@ const FAQ = () => {
           <p>{error}</p>
         ) : faqData.length > 0 ? (
           faqData.map((faq) => (
-            <div key={faq.id} className="faq-question">
-              <div className="faq-question-title-container">
+            <div
+              key={faq.id}
+              className={`faq-question ${
+                expandedFAQ[faq.id] ? "expanded" : ""
+              }`}
+            >
+              <div
+                className="faq-question-title-container"
+                onClick={() => toggleFAQ(faq.id)}
+              >
                 <h3 className="faq-question-title">{faq.title}</h3>
                 <button
-                  className="material-icons faq-chevron"
+                  className={`material-icons faq-chevron ${
+                    expandedFAQ === faq.id ? "expanded" : ""
+                  }`}
                   aria-label="Expand FAQ"
                 >
                   chevron_right
