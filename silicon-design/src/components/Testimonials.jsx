@@ -1,21 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { fetchTestimonials } from "../services/apiService";
+import TestimonialCard from "./TestimonialCard";
 
 const Testimonials = () => {
+  const [testimonials, setTestimonials] = useState([]);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await fetchTestimonials();
+        setTestimonials(data);
+      } catch (error) {
+        setError(error.message);
+      }
+    };
+    fetchData();
+  }, []);
   return (
     <section id="testimonials">
       <div className="testimonials-container">
         <h1 className="clients-loving">Clients are Loving Our App</h1>
-        <div className="testimonial-images">
-          <img
-            src="/images/testimonial.svg"
-            alt="Testimonials Image 1"
-            className="testimonial-image"
-          />
-          <img
-            src="/images/testimonial-2.svg"
-            alt="Testimonials Image 2"
-            className="testimonial-image-2"
-          />
+        <div className="testimonials-container">
+          {error ? (
+            <p>{error}</p>
+          ) : testimonials.length > 0 ? (
+            testimonials.map((testimonial) => (
+              <TestimonialCard key={testimonial.id} testimonial={testimonial} />
+            ))
+          ) : (
+            <p>Loading tetsimonials</p>
+          )}
         </div>
       </div>
     </section>

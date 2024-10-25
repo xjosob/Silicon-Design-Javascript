@@ -765,13 +765,13 @@ main .app-features-2-container .money-transfer-text-container .check-icon {
 }
 main #testimonials {
   display: flex;
-  justify-content: space-between;
   background-color: #f3f6ff;
   padding: 5rem 1rem;
 }
 main #testimonials .testimonials-container {
   display: flex;
-  justify-content: space-between;
+  gap: 1.5rem;
+  justify-content: center;
 }
 main #testimonials .testimonials-container .clients-loving {
   color: #0b0f19;
@@ -780,14 +780,76 @@ main #testimonials .testimonials-container .clients-loving {
   line-height: 130%;
   width: 25%;
 }
-main #testimonials .testimonials-container .testimonial-images {
+main #testimonials .testimonials-container .testimonial-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 48px 24px 24px 24px;
+  box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
   display: flex;
-  gap: 0.9375rem;
-}
-main #testimonials .testimonials-container .testimonial-images img {
-  max-width: 60%;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
   height: auto;
-  min-width: 20%;
+  max-width: 26rem;
+  position: relative;
+}
+main #testimonials .testimonials-container .testimonial-card .quote-icon {
+  position: absolute;
+  top: -22px;
+  left: 24px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  background-color: #6366f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #testimonials .testimonials-container .testimonial-card .quote-icon img {
+  width: 50;
+  height: 50%;
+}
+main #testimonials .testimonials-container .testimonial-card .testimonial-stars {
+  display: flex;
+  gap: 0.125rem;
+}
+main #testimonials .testimonials-container .testimonial-card .testimonial-stars .material-icons {
+  font-size: 1.5rem;
+  color: #ffba08;
+}
+main #testimonials .testimonials-container .testimonial-card .testimonial-stars .unfilled {
+  color: #dcdcdc;
+}
+main #testimonials .testimonials-container .testimonial-card .testimonial-comment {
+  color: #565973;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+main #testimonials .testimonials-container .testimonial-card .testimonial-author {
+  display: flex;
+  align-self: flex-start;
+  gap: 1rem;
+}
+main #testimonials .testimonials-container .testimonial-card .testimonial-author .author-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+}
+main #testimonials .testimonials-container .testimonial-card .testimonial-author .author-details {
+  display: flex;
+  flex-direction: column;
+}
+main #testimonials .testimonials-container .testimonial-card .testimonial-author .author-details .author-name {
+  font-weight: 700;
+  line-height: 160%;
+  color: #0b0f19;
+}
+main #testimonials .testimonials-container .testimonial-card .testimonial-author .author-details .author-job {
+  color: #565973;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 160%;
 }
 main #faq-section {
   display: flex;
@@ -1193,28 +1255,25 @@ body.dark-theme main #app-features-2 .receive-money-icons p {
 body.dark-theme main #testimonials {
   background-color: rgba(255, 255, 255, 0.04);
 }
-body.dark-theme main #testimonials .testimonials-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 0.5rem;
-}
 body.dark-theme main #testimonials .testimonials-container .clients-loving {
   color: white;
 }
-body.dark-theme main #testimonials .testimonials-container .testimonial-images {
-  display: flex;
-  gap: 1.5rem;
+body.dark-theme main #testimonials .testimonials-container .testimonial-card {
+  background: rgba(255, 255, 255, 0.04);
 }
-body.dark-theme main #testimonials .testimonials-container .testimonial-images img {
-  max-width: 60%;
-  height: auto;
-  min-width: 20%;
+body.dark-theme main #testimonials .testimonials-container .testimonial-card .testimonial-stars .unfilled {
+  opacity: 0.5;
 }
-body.dark-theme main #testimonials .testimonials-container .testimonial-images .testimonial-image {
-  content: url(images/testimonial-dark.svg);
+body.dark-theme main #testimonials .testimonials-container .testimonial-card .testimonial-comment {
+  color: white;
+  opacity: 0.7;
 }
-body.dark-theme main #testimonials .testimonials-container .testimonial-images .testimonial-image-2 {
-  content: url(images/testimonial-2-dark.svg);
+body.dark-theme main #testimonials .testimonials-container .testimonial-card .testimonial-author .author-name {
+  color: white;
+}
+body.dark-theme main #testimonials .testimonials-container .testimonial-card .testimonial-author .author-job {
+  color: white;
+  opacity: 0.5;
 }
 body.dark-theme main #faq-section .faq-title {
   color: white;

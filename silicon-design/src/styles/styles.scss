@@ -653,14 +653,13 @@ main {
 
   #testimonials {
     display: flex;
-    justify-content: space-between;
     background-color: $background-light;
     padding: 5rem 1rem;
 
     .testimonials-container {
       display: flex;
-      justify-content: space-between;
-
+      gap: 1.5rem;
+      justify-content: center;
       .clients-loving {
         @each $property, $value in $heading-h1 {
           #{$property}: $value;
@@ -670,14 +669,86 @@ main {
         width: 25%;
       }
 
-      .testimonial-images {
+      .testimonial-card {
+        background-color: white;
+        border-radius: 8px;
+        padding: 48px 24px 24px 24px;
+        box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06),
+          0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
         display: flex;
-        gap: 0.9375rem;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+        height: auto;
+        max-width: 26rem;
+        position: relative;
 
-        img {
-          max-width: 60%;
-          height: auto;
-          min-width: 20%;
+        .quote-icon {
+          position: absolute;
+          top: -22px;
+          left: 24px;
+          border-radius: 8px;
+          flex-shrink: 0;
+          width: 44px;
+          height: 44px;
+          background-color: $primary;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 50;
+            height: 50%;
+          }
+        }
+
+        .testimonial-stars {
+          display: flex;
+          gap: 0.125rem;
+
+          .material-icons {
+            font-size: 1.5rem;
+            color: #ffba08;
+          }
+
+          .unfilled {
+            color: #dcdcdc;
+          }
+        }
+
+        .testimonial-comment {
+          @each $property, $value in $l-text {
+            #{$property}: $value;
+          }
+        }
+
+        .testimonial-author {
+          display: flex;
+          align-self: flex-start;
+          gap: 1rem;
+
+          .author-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 4px;
+          }
+
+          .author-details {
+            display: flex;
+            flex-direction: column;
+
+            .author-name {
+              font-weight: 700;
+              line-height: 160%;
+              color: $heading-dark;
+            }
+
+            .author-job {
+              @each $property, $value in $s-text {
+                #{$property}: $value;
+              }
+              line-height: 160%;
+            }
+          }
         }
       }
     }
@@ -965,30 +1036,33 @@ body.dark-theme main {
     background-color: rgba(255, 255, 255, 0.04);
 
     .testimonials-container {
-      display: flex;
-      justify-content: space-between;
-      gap: 0.5rem;
-
       .clients-loving {
         color: white;
       }
 
-      .testimonial-images {
-        display: flex;
-        gap: 1.5rem;
+      .testimonial-card {
+        background: rgba(255, 255, 255, 0.04);
 
-        img {
-          max-width: 60%;
-          height: auto;
-          min-width: 20%;
+        .testimonial-stars {
+          .unfilled {
+            opacity: 0.5;
+          }
         }
 
-        .testimonial-image {
-          content: url(images/testimonial-dark.svg);
+        .testimonial-comment {
+          color: white;
+          opacity: 0.7;
         }
 
-        .testimonial-image-2 {
-          content: url(images/testimonial-2-dark.svg);
+        .testimonial-author {
+          .author-name {
+            color: white;
+          }
+
+          .author-job {
+            color: white;
+            opacity: 0.5;
+          }
         }
       }
     }
