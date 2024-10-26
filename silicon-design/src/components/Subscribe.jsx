@@ -21,17 +21,22 @@ const Subscribe = () => {
         </div>
       </div>
 
-      <div className="subscribe-form">
+      <form className="subscribe-form">
         <div className="input-group">
           <span className="material-icons-outlined" aria-hidden="true">
             mail_outline
           </span>
-          <div className="email-placeholder" aria-label="Your Email">
-            Your Email
-          </div>
+          <input
+            type="email"
+            placeholder="Your Email"
+            aria-label="Your Email"
+            className="email-input"
+          />
         </div>
-        <div className="subscribe-btn">Subscribe</div>
-      </div>
+        <button type="submit" className="subscribe-btn">
+          Subscribe
+        </button>
+      </form>
     </section>
   );
 };

@@ -934,8 +934,6 @@ main {
 
     .subscribe-form {
       display: flex;
-      align-items: center;
-      flex-grow: 1;
       white-space: nowrap;
       justify-content: flex-end;
     }
@@ -945,18 +943,19 @@ main {
       align-items: center;
       border-radius: 8px 0px 0px 8px;
       padding-left: 0.625rem;
-      border: 1px solid #ddd;
+      color: $input-placeholder;
+      gap: 0.375rem;
       flex-grow: 1;
       max-width: 20.625rem;
+      border: 1px solid #ddd;
       background-color: white;
 
-      .email-placeholder {
-        padding: 0.625rem;
-        color: $input-placeholder;
-      }
-
-      .material-icons-outlined {
-        color: $input-placeholder;
+      .email-input {
+        border: none;
+        font-size: map-get($m-text, font-size);
+        font-weight: map-get($m-text, font-weight);
+        outline: none;
+        background: transparent;
       }
     }
 
@@ -965,6 +964,7 @@ main {
       color: white;
       border: none;
       padding: 0.625rem 1.25rem;
+
       border-radius: 0px 8px 8px 0px;
       font-size: 16px;
       cursor: pointer;
@@ -1148,12 +1148,13 @@ body.dark-theme main {
       border: 1px solid rgba(255, 255, 255, 0.18);
       background-color: rgba(255, 255, 255, 0.02);
 
-      .email-placeholder {
+      .material-icons-outlined {
         color: rgba(255, 255, 255, 0.4);
       }
 
-      .material-icons-outlined {
-        color: rgba(255, 255, 255, 0.4);
+      .email-input {
+        color: rgba(255, 255, 255, 0.7);
+        caret-color: rgba(255, 255, 255, 0.4);
       }
     }
   }
@@ -1552,7 +1553,12 @@ body.dark-theme footer {
       .subscribe-form {
         display: flex;
         align-items: center;
-        min-width: 30%;
+        max-width: 30%;
+      }
+
+      .input-group {
+        padding: 0.5313rem 0.625rem;
+        width: 100%;
       }
 
       .subscribe-btn {
@@ -1635,15 +1641,7 @@ body.dark-theme footer {
 
       .input-group {
         border: 1px solid rgba(255, 255, 255, 0.18);
-        background-color: white;
-
-        .email-placeholder {
-          color: $input-placeholder;
-        }
-
-        .material-icons-outlined {
-          color: $input-placeholder;
-        }
+        background-color: rgba(255, 255, 255, 0.02);
       }
     }
   }
@@ -2017,18 +2015,17 @@ body.dark-theme footer {
       .subscribe-form {
         display: flex;
         align-items: center;
-        white-space: nowrap;
         justify-content: flex-end;
-        width: 100%;
+        max-width: 100%;
+      }
+
+      .input-group {
+        padding: 0.9375rem 1.1557rem 0.9375rem 1.25rem;
+        min-width: 6.25rem;
       }
 
       .subscribe-btn {
         padding: 0.9375rem 1.1557rem 1.125rem 1.25rem;
-      }
-
-      .input-group {
-        padding: 7px 10px 5px 20px;
-        max-width: 20.625rem;
       }
     }
   }
