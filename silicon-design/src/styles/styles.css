@@ -1198,6 +1198,7 @@ main #subscribe .input-group {
   max-width: 20.625rem;
   border: 1px solid #ddd;
   background-color: white;
+  position: relative;
 }
 main #subscribe .input-group .email-input {
   border: none;
@@ -1206,7 +1207,34 @@ main #subscribe .input-group .email-input {
   outline: none;
   background: transparent;
 }
-main #subscribe .subscribe-btn {
+main #subscribe .input-group .error-icon {
+  position: absolute;
+  right: 0.75rem;
+  color: red;
+  font-size: 1.125rem;
+  display: none;
+}
+main #subscribe .input-group .error-icon.show {
+  display: block;
+}
+main #subscribe .input-group .error-text {
+  background: rgba(239, 68, 68, 0.12);
+  padding: 0px 8px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: -1.5rem;
+  left: 0;
+  color: red;
+  font-size: 0.875rem;
+  display: none;
+}
+main #subscribe .input-group .error-text.show {
+  display: block;
+}
+main #subscribe .input-group.input-error {
+  border-color: red;
+}
+main .subscribe-btn {
   background-color: #6366f1;
   color: white;
   border: none;

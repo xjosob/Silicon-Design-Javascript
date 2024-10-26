@@ -949,6 +949,7 @@ main {
       max-width: 20.625rem;
       border: 1px solid #ddd;
       background-color: white;
+      position: relative;
 
       .email-input {
         border: none;
@@ -957,18 +958,47 @@ main {
         outline: none;
         background: transparent;
       }
-    }
 
-    .subscribe-btn {
-      background-color: $primary;
-      color: white;
-      border: none;
-      padding: 0.625rem 1.25rem;
+      .error-icon {
+        position: absolute;
+        right: 0.75rem;
+        color: red;
+        font-size: 1.125rem;
+        display: none;
+        &.show {
+          display: block;
+        }
+      }
 
-      border-radius: 0px 8px 8px 0px;
-      font-size: 16px;
-      cursor: pointer;
+      .error-text {
+        background: rgba(239, 68, 68, 0.12);
+        padding: 0px 8px;
+        border-radius: 4px;
+        position: absolute;
+        bottom: -1.5rem;
+        left: 0;
+        color: red;
+        font-size: 0.875rem;
+        display: none;
+        &.show {
+          display: block;
+        }
+      }
+
+      &.input-error {
+        border-color: red;
+      }
     }
+  }
+
+  .subscribe-btn {
+    background-color: $primary;
+    color: white;
+    border: none;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0px 8px 8px 0px;
+    font-size: 16px;
+    cursor: pointer;
   }
 }
 
