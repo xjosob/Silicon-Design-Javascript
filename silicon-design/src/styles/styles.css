@@ -1207,32 +1207,46 @@ main #subscribe .input-group .email-input {
   outline: none;
   background: transparent;
 }
-main #subscribe .input-group .error-icon {
+main #subscribe .input-group .error-icon,
+main #subscribe .input-group .success-icon {
   position: absolute;
   right: 0.75rem;
-  color: red;
   font-size: 1.125rem;
   display: none;
 }
 main #subscribe .input-group .error-icon.show {
+  color: red;
   display: block;
 }
-main #subscribe .input-group .error-text {
-  background: rgba(239, 68, 68, 0.12);
+main #subscribe .input-group .success-icon.show {
+  color: #22c55e;
+  display: block;
+}
+main #subscribe .input-group .error-text,
+main #subscribe .input-group .success-text {
   padding: 0px 8px;
   border-radius: 4px;
   position: absolute;
   bottom: -1.5rem;
   left: 0;
-  color: red;
   font-size: 0.875rem;
   display: none;
 }
 main #subscribe .input-group .error-text.show {
+  background: rgba(239, 68, 68, 0.12);
+  color: red;
+  display: block;
+}
+main #subscribe .input-group .success-text.show {
+  background: rgba(34, 197, 94, 0.12);
+  color: #22c55e;
   display: block;
 }
 main #subscribe .input-group.input-error {
   border-color: red;
+}
+main #subscribe .input-group.input-success {
+  border-color: #22c55e;
 }
 main .subscribe-btn {
   background-color: #6366f1;
@@ -1242,6 +1256,13 @@ main .subscribe-btn {
   border-radius: 0px 8px 8px 0px;
   font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+main .subscribe-btn:hover, main .subscribe-btn:focus {
+  background-color: #5558f0;
+}
+main .subscribe-btn:active {
+  background-color: #7a7df3;
 }
 
 body.dark-theme main #brands .brand-box {
@@ -1368,6 +1389,30 @@ body.dark-theme main #subscribe .input-group .material-icons-outlined {
 body.dark-theme main #subscribe .input-group .email-input {
   color: rgba(255, 255, 255, 0.7);
   caret-color: rgba(255, 255, 255, 0.4);
+}
+body.dark-theme main #subscribe .input-group .error-text.show {
+  background: rgba(239, 68, 68, 0.12);
+  color: red;
+  display: block;
+}
+body.dark-theme main #subscribe .input-group .success-text.show {
+  background: rgba(34, 197, 94, 0.12);
+  color: #22c55e;
+  display: block;
+}
+body.dark-theme main #subscribe .input-group.input-error {
+  border-color: red;
+}
+body.dark-theme main #subscribe .input-group.input-success {
+  border-color: #22c55e;
+}
+body.dark-theme main #subscribe .input-group .error-icon.show {
+  color: red;
+  display: block;
+}
+body.dark-theme main #subscribe .input-group .success-icon.show {
+  color: #22c55e;
+  display: block;
 }
 
 footer {

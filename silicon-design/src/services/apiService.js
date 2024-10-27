@@ -16,3 +16,29 @@ export const fetchTestimonials = async () => {
   }
   return response.json();
 };
+
+export const subscribeToAPI = async (email) => {
+  try {
+    console.log("attempting to subscribe with email:", email);
+    const response = await fetch(
+      "https://win24-assignment.azurewebsites.net/api/forms/subscribe",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error("Failed to subscribe. Plese try again later");
+    }
+
+    console.log("api response status:", response.status);
+    return response;
+  } catch (error) {
+    console.log("api error:", error);
+    throw error;
+  }
+};

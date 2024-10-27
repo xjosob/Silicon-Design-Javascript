@@ -1,25 +1,49 @@
 import React from "react";
 import { useState } from "react";
 import Validation from "../services/Validation";
+import { subscribeToAPI } from "../services/apiService";
 
 const Subscribe = () => {
   function FormValidation() {
     const [values, setValues] = useState({
       email: "",
     });
-
     const [errors, setErrors] = useState({});
+
+    const [success, setSuccess] = useState(false);
 
     function handleInput(e) {
       const newEmail = { ...values, [e.target.name]: e.target.value };
       setValues(newEmail);
+      setSuccess(false);
+      setErrors({});
     }
 
-    function handleValidation(e) {
+    async function handleValidation(e) {
       e.preventDefault();
       const ValidationErrors = Validation(values);
       setErrors(ValidationErrors);
-      setValues({ email: "" });
+
+      if (Object.keys(ValidationErrors).length === 0) {
+        try {
+          console.log("sending data to the api", values.email);
+
+          await subscribeToAPI(values.email);
+
+          console.log("data sent successfully");
+
+          setSuccess(true);
+          setErrors({});
+          setValues({ email: "" });
+        } catch (error) {
+          console.log("error while subscribing", error);
+          setErrors({ email: error.message });
+          setSuccess(false);
+        }
+      } else {
+        console.log("validation errors:", ValidationErrors);
+        setSuccess(false);
+      }
     }
 
     return (
@@ -43,14 +67,24 @@ const Subscribe = () => {
         </div>
 
         <form className="subscribe-form" onSubmit={handleValidation} noValidate>
-          <div className={`input-group ${errors.email ? "input-error" : ""}`}>
+          <div
+            className={`input-group ${
+              errors.email ? "input-error" : success ? "input-success" : ""
+            }`}
+          >
             <span className="material-icons-outlined" aria-hidden="true">
               mail_outline
             </span>
             <input
               type="email"
               name="email"
-              placeholder={errors.email ? "Wrong input" : "Your Email"}
+              placeholder={
+                errors.email
+                  ? "Wrong input"
+                  : success
+                  ? "Successful input"
+                  : "Your Email"
+              }
               aria-label="Your Email"
               className="email-input"
               onChange={handleInput}
@@ -65,6 +99,17 @@ const Subscribe = () => {
                   cancel
                 </span>
                 <p className="error-text show">{errors.email}</p>
+              </>
+            )}
+            {success && (
+              <>
+                <span
+                  className="material-icons-outlined success-icon show"
+                  aria-hidden="true"
+                >
+                  check_circle
+                </span>
+                <p className="success-text show">You have been subscribed!</p>
               </>
             )}
           </div>
