@@ -191,6 +191,7 @@
   gap: 0.25rem;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 #contact-us .contact-elements .consultation .consultation-wrapper form .form-group label {
   color: #0b0f19;
@@ -201,12 +202,70 @@
   height: 2.5rem;
   border: 1px solid #d4d7e5;
   border-radius: 8px;
-  font-size: 1.2rem;
+  padding-left: 0.1875rem;
 }
 #contact-us .contact-elements .consultation .consultation-wrapper form .form-group select {
   height: 2.5rem;
   border: 1px solid #d4d7e5;
   border-radius: 8px;
+  border: 1px solid #d4d7e5;
+}
+#contact-us .contact-elements .consultation .consultation-wrapper form .form-group input::-moz-placeholder, #contact-us .contact-elements .consultation .consultation-wrapper form .form-group select::-moz-placeholder {
+  color: #565973;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #b4b7c9;
+  padding-left: 0.1875rem;
+}
+#contact-us .contact-elements .consultation .consultation-wrapper form .form-group input::placeholder,
+#contact-us .contact-elements .consultation .consultation-wrapper form .form-group select::placeholder {
+  color: #565973;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #b4b7c9;
+  padding-left: 0.1875rem;
+}
+#contact-us .contact-elements .consultation .consultation-wrapper form .form-group.input-error input, #contact-us .contact-elements .consultation .consultation-wrapper form .form-group.input-error select {
+  border-color: red;
+}
+#contact-us .contact-elements .consultation .consultation-wrapper form .form-group.input-success input, #contact-us .contact-elements .consultation .consultation-wrapper form .form-group.input-success select {
+  border-color: #22c55e;
+}
+#contact-us .contact-elements .consultation .consultation-wrapper form .form-group .error-icon,
+#contact-us .contact-elements .consultation .consultation-wrapper form .form-group .success-icon {
+  position: absolute;
+  font-size: 1.125rem;
+  right: 0.75rem;
+  top: 55%;
+  display: none;
+}
+#contact-us .contact-elements .consultation .consultation-wrapper form .form-group .error-icon.show {
+  color: red;
+  display: block;
+}
+#contact-us .contact-elements .consultation .consultation-wrapper form .form-group .success-icon.show {
+  color: #22c55e;
+  display: block;
+}
+#contact-us .contact-elements .consultation .consultation-wrapper form .form-group .error-text,
+#contact-us .contact-elements .consultation .consultation-wrapper form .form-group .success-text {
+  padding: 0px 8px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: -1.5rem;
+  left: 0;
+  font-size: 0.875rem;
+  display: none;
+}
+#contact-us .contact-elements .consultation .consultation-wrapper form .form-group .error-text.show {
+  background: rgba(239, 68, 68, 0.12);
+  color: red;
+  display: block;
+}
+#contact-us .contact-elements .consultation .consultation-wrapper form .form-group .success-text.show {
+  background: rgba(34, 197, 94, 0.12);
+  color: #22c55e;
+  display: block;
 }
 #contact-us .contact-elements .consultation .consultation-wrapper form input:focus,
 #contact-us .contact-elements .consultation .consultation-wrapper form select:focus {
@@ -270,11 +329,63 @@ body.dark-theme #contact-us .consultation {
 body.dark-theme #contact-us .consultation .consultation-wrapper h3 {
   color: #f3f6ff;
 }
-body.dark-theme #contact-us .consultation .consultation-wrapper #consultation-form .form-group input,
+body.dark-theme #contact-us .consultation .consultation-wrapper #consultation-form .form-group input {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  caret-color: rgba(255, 255, 255, 0.4);
+}
 body.dark-theme #contact-us .consultation .consultation-wrapper #consultation-form .form-group select {
   background-color: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  color: #f3f6ff;
+  color: rgba(255, 255, 255, 0.7);
+  caret-color: rgba(255, 255, 255, 0.4);
+}
+body.dark-theme #contact-us .consultation .consultation-wrapper #consultation-form .form-group.input-error input, body.dark-theme #contact-us .consultation .consultation-wrapper #consultation-form .form-group.input-error select {
+  border-color: red;
+}
+body.dark-theme #contact-us .consultation .consultation-wrapper #consultation-form .form-group.input-success input, body.dark-theme #contact-us .consultation .consultation-wrapper #consultation-form .form-group.input-success select {
+  border-color: #22c55e;
+}
+body.dark-theme #contact-us .consultation .consultation-wrapper #consultation-form .form-group .error-icon,
+body.dark-theme #contact-us .consultation .consultation-wrapper #consultation-form .form-group .success-icon {
+  position: absolute;
+  font-size: 1.125rem;
+  right: 0.75rem;
+  top: 55%;
+  display: none;
+}
+body.dark-theme #contact-us .consultation .consultation-wrapper #consultation-form .form-group .error-icon.show {
+  color: red;
+  display: block;
+}
+body.dark-theme #contact-us .consultation .consultation-wrapper #consultation-form .form-group .success-icon.show {
+  color: #22c55e;
+  display: block;
+}
+body.dark-theme #contact-us .consultation .consultation-wrapper #consultation-form .form-group .error-text,
+body.dark-theme #contact-us .consultation .consultation-wrapper #consultation-form .form-group .success-text {
+  padding: 0px 8px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: -1.5rem;
+  left: 0;
+  font-size: 0.875rem;
+  display: none;
+}
+body.dark-theme #contact-us .consultation .consultation-wrapper #consultation-form .form-group .error-text.show {
+  background: rgba(239, 68, 68, 0.12);
+  color: red;
+  display: block;
+}
+body.dark-theme #contact-us .consultation .consultation-wrapper #consultation-form .form-group .success-text.show {
+  background: rgba(34, 197, 94, 0.12);
+  color: #22c55e;
+  display: block;
+}
+body.dark-theme #contact-us .consultation .consultation-wrapper #consultation-form .form-group option {
+  background-color: #161616;
+  color: white;
 }
 body.dark-theme #contact-us .consultation .consultation-wrapper #consultation-form .form-group label {
   color: #f3f6ff;

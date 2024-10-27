@@ -214,6 +214,7 @@
             gap: 0.25rem;
             display: flex;
             flex-direction: column;
+            position: relative;
 
             label {
               @include form-label;
@@ -221,11 +222,73 @@
 
             input {
               @include form-input;
-              font-size: 1.2rem;
+              padding-left: 0.1875rem;
             }
 
             select {
               @include form-input;
+              border: 1px solid $forms-border;
+            }
+
+            input::placeholder,
+            select::placeholder {
+              @each $property, $value in $s-text {
+                #{$property}: $value;
+              }
+              color: $input-placeholder;
+              padding-left: 0.1875rem;
+            }
+
+            &.input-error input,
+            &.input-error select {
+              border-color: red;
+            }
+
+            &.input-success input,
+            &.input-success select {
+              border-color: #22c55e;
+            }
+
+            .error-icon,
+            .success-icon {
+              position: absolute;
+              font-size: 1.125rem;
+              right: 0.75rem;
+              top: 55%;
+              display: none;
+            }
+
+            .error-icon.show {
+              color: red;
+              display: block;
+            }
+
+            .success-icon.show {
+              color: #22c55e;
+              display: block;
+            }
+
+            .error-text,
+            .success-text {
+              padding: 0px 8px;
+              border-radius: 4px;
+              position: absolute;
+              bottom: -1.5rem;
+              left: 0;
+              font-size: 0.875rem;
+              display: none;
+            }
+
+            .error-text.show {
+              background: rgba(239, 68, 68, 0.12);
+              color: red;
+              display: block;
+            }
+
+            .success-text.show {
+              background: rgba(34, 197, 94, 0.12);
+              color: #22c55e;
+              display: block;
             }
           }
 
@@ -312,11 +375,75 @@ body.dark-theme #contact-us {
 
       #consultation-form {
         .form-group {
-          input,
+          input {
+            background-color: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            color: white;
+            caret-color: rgba(255, 255, 255, 0.4);
+          }
+
           select {
             background-color: rgba(255, 255, 255, 0.04);
             border: 1px solid rgba(255, 255, 255, 0.18);
-            color: #f3f6ff;
+            color: rgba(255, 255, 255, 0.7);
+            caret-color: rgba(255, 255, 255, 0.4);
+          }
+
+          &.input-error input,
+          &.input-error select {
+            border-color: red;
+          }
+
+          &.input-success input,
+          &.input-success select {
+            border-color: #22c55e;
+          }
+
+          .error-icon,
+          .success-icon {
+            position: absolute;
+            font-size: 1.125rem;
+            right: 0.75rem;
+            top: 55%;
+            display: none;
+          }
+
+          .error-icon.show {
+            color: red;
+            display: block;
+          }
+
+          .success-icon.show {
+            color: #22c55e;
+            display: block;
+          }
+
+          .error-text,
+          .success-text {
+            padding: 0px 8px;
+            border-radius: 4px;
+            position: absolute;
+            bottom: -1.5rem;
+            left: 0;
+            font-size: 0.875rem;
+            display: none;
+          }
+
+          .error-text.show {
+            background: rgba(239, 68, 68, 0.12);
+            color: red;
+            display: block;
+          }
+
+          .success-text.show {
+            background: rgba(34, 197, 94, 0.12);
+            color: #22c55e;
+            display: block;
+          }
+
+          option {
+            background-color: #161616;
+            color: white;
           }
 
           label {

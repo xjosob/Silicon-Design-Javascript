@@ -42,3 +42,30 @@ export const subscribeToAPI = async (email) => {
     throw error;
   }
 };
+
+export const sendConsultationData = async (data) => {
+  try {
+    console.log("sending consultation data to the api:", data);
+
+    const response = await fetch(
+      "https://win24-assignment.azurewebsites.net/api/forms/contact",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error("Failed to send consultation data");
+    }
+
+    console.log("conutation data sent successfully");
+    return response;
+  } catch (error) {
+    console.log("api error:", error);
+    throw error;
+  }
+};
