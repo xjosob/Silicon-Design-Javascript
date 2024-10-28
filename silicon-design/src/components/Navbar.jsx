@@ -1,41 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 const Navbar = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
   const isContactPage = location.pathname === "/contact";
-
-  useEffect(() => {
-    const themeToggle = document.getElementById("theme-toggle");
-    const savedTheme = localStorage.getItem("theme") || "light-theme";
-    const body = document.body;
-
-    body.classList.add(savedTheme);
-
-    const handleThemeToggle = () => {
-      if (themeToggle.checked) {
-        body.classList.add("dark-theme");
-        body.classList.remove("light-theme");
-        localStorage.setItem("theme", "dark-theme");
-      } else {
-        body.classList.add("light-theme");
-        body.classList.remove("dark-theme");
-        localStorage.setItem("theme", "light-theme");
-      }
-    };
-
-    if (themeToggle) {
-      themeToggle.checked = savedTheme === "dark-theme";
-      themeToggle.addEventListener("change", handleThemeToggle);
-    }
-
-    return () => {
-      if (themeToggle) {
-        themeToggle.removeEventListener("change", handleThemeToggle);
-      }
-    };
-  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -61,7 +32,12 @@ const Navbar = () => {
           <li className="theme-text">Dark Mode</li>
           <li className="toggle-container">
             <label className="switch" htmlFor="theme-toggle">
-              <input type="checkbox" id="theme-toggle" />
+              <input
+                type="checkbox"
+                id="theme-toggle"
+                checked={theme === "dark-theme"}
+                onChange={toggleTheme}
+              />
               <span className="slider round"></span>
             </label>
           </li>
