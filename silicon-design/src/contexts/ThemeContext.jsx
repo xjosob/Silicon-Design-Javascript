@@ -6,9 +6,22 @@ export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState("light-theme");
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") || "light-theme";
-    setTheme(savedTheme);
-    document.body.classList.add(savedTheme);
+    const themeToggle = document.getElementById("theme-toggle");
+    const prefersDarkScheme = window.matchMedia(
+      "(prefers-color-scheme: dark"
+    ).matches;
+    const savedTheme = localStorage.getItem("theme");
+
+    const defaultTheme = savedTheme
+      ? savedTheme
+      : prefersDarkScheme
+      ? "dark-theme"
+      : "light-theme";
+    document.body.classList.add(defaultTheme);
+
+    if (themeToggle) {
+      themeToggle.checked = defaultTheme === "dark-theme";
+    }
   }, []);
 
   const toggleTheme = () => {
