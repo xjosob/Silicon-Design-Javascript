@@ -1,5 +1,5 @@
 // Component copied from ChatGPT
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
@@ -15,7 +15,17 @@ const customIcon = new L.Icon({
 
 const MapComponent = () => {
   const { theme } = useContext(ThemeContext);
+  const [zoom, setZoom] = useState(window.innerWidth <= 480 ? 13 : 15);
   const defaultPosition = [37.72764010205873, -122.4105193681904];
+
+  useEffect(() => {
+    const handleResize = () => {
+      setZoom(window.innerWidth <= 480 ? 13 : 15);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   const locations = [
     { name: "430 B Road", position: [37.73018138790294, -122.4037805200484] },
     {
@@ -35,7 +45,7 @@ const MapComponent = () => {
   return (
     <MapContainer
       center={defaultPosition}
-      zoom={15}
+      zoom={zoom}
       style={{ height: "400px", width: "100%" }}
     >
       <TileLayer url={tileLayerUrl} attribution={tileLayerAttribution} />
