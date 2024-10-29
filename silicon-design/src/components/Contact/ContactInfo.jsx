@@ -5,6 +5,7 @@ const ContactInfo = () => {
   return (
     <div className="contact-info">
       <h1>Contact Us</h1>
+      <div className="contact-elements desktop-view"></div>
       <ContactItem
         imageSrc="/icons/email-us.svg"
         title="Email us"
